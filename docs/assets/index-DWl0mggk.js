@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/browserAll-Y6e8vGVQ.js","assets/webworkerAll-hfLcr_AJ.js","assets/colorToUniform-BXaCBwVl.js","assets/WebGPURenderer-BMCWVOKm.js","assets/SharedSystems-Dho4PArM.js","assets/WebGLRenderer-zp7Nvm21.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/browserAll-DgY-cROI.js","assets/webworkerAll-YI6_9JWH.js","assets/colorToUniform-BXaCBwVl.js","assets/WebGPURenderer-CseNsQNV.js","assets/SharedSystems-C6Fj1uFh.js","assets/WebGLRenderer-C4LDM4F3.js"])))=>i.map(i=>d[i]);
 let jm, F2, Wi, Ui, ds, Se, cu, Cd, va, v2, cx, pd, Nz, ae, Pz, wd, ce, ln, T0, Xz, qf, x0, He, o6, fx, _g, dx, cz, ol, En, oz, m2, J2, _e, an, d6, G6, D6, iR, aR, cR, fR, dR, tT, Oc, Ym, tb, bd, m6, Dc, cT, Rx, Cx, Sd, D4, sb, dT, C6, vd, Om, Ji, zx, A6, b_, Z2, E2, xa, Y2, B0, nR, sR, oR, hR, Q4, Fm, we, R4, S_, Bi, mR, Xs, f2;
 let __tla = (async () => {
   var _a2, _b2;
@@ -54,7 +54,7 @@ let __tla = (async () => {
   function AM() {
     return wv || (wv = 1, Gy.exports = MM()), Gy.exports;
   }
-  var ot = AM(), jy = {
+  var lt = AM(), jy = {
     exports: {}
   }, qt = {};
   var Cv;
@@ -101,7 +101,7 @@ let __tla = (async () => {
       A: null,
       T: null,
       S: null
-    }, lt = Object.prototype.hasOwnProperty;
+    }, rt = Object.prototype.hasOwnProperty;
     function ct(Y, tt, pt) {
       var _t = pt.ref;
       return {
@@ -204,7 +204,7 @@ let __tla = (async () => {
       if (Y._status === 1) return Y._result.default;
       throw Y._result;
     }
-    var rt = typeof reportError == "function" ? reportError : function(Y) {
+    var ot = typeof reportError == "function" ? reportError : function(Y) {
       if (typeof window == "object" && typeof window.ErrorEvent == "function") {
         var tt = new window.ErrorEvent("error", {
           bubbles: true,
@@ -255,7 +255,7 @@ let __tla = (async () => {
     }, qt.cloneElement = function(Y, tt, pt) {
       if (Y == null) throw Error("The argument must be a React element, but you passed " + Y + ".");
       var _t = N({}, Y.props), Tt = Y.key;
-      if (tt != null) for (jt in tt.key !== void 0 && (Tt = "" + tt.key), tt) !lt.call(tt, jt) || jt === "key" || jt === "__self" || jt === "__source" || jt === "ref" && tt.ref === void 0 || (_t[jt] = tt[jt]);
+      if (tt != null) for (jt in tt.key !== void 0 && (Tt = "" + tt.key), tt) !rt.call(tt, jt) || jt === "key" || jt === "__self" || jt === "__source" || jt === "ref" && tt.ref === void 0 || (_t[jt] = tt[jt]);
       var jt = arguments.length - 2;
       if (jt === 1) _t.children = pt;
       else if (1 < jt) {
@@ -277,7 +277,7 @@ let __tla = (async () => {
       }, Y;
     }, qt.createElement = function(Y, tt, pt) {
       var _t, Tt = {}, jt = null;
-      if (tt != null) for (_t in tt.key !== void 0 && (jt = "" + tt.key), tt) lt.call(tt, _t) && _t !== "key" && _t !== "__self" && _t !== "__source" && (Tt[_t] = tt[_t]);
+      if (tt != null) for (_t in tt.key !== void 0 && (jt = "" + tt.key), tt) rt.call(tt, _t) && _t !== "key" && _t !== "__self" && _t !== "__source" && (Tt[_t] = tt[_t]);
       var kt = arguments.length - 2;
       if (kt === 1) Tt.children = pt;
       else if (1 < kt) {
@@ -315,9 +315,9 @@ let __tla = (async () => {
       P.T = pt;
       try {
         var _t = Y(), Tt = P.S;
-        Tt !== null && Tt(pt, _t), typeof _t == "object" && _t !== null && typeof _t.then == "function" && _t.then(q, rt);
+        Tt !== null && Tt(pt, _t), typeof _t == "object" && _t !== null && typeof _t.then == "function" && _t.then(q, ot);
       } catch (jt) {
-        rt(jt);
+        ot(jt);
       } finally {
         tt !== null && pt.types !== null && (tt.types = pt.types), P.T = tt;
       }
@@ -378,8 +378,8 @@ let __tla = (async () => {
         var st = B.length;
         B.push(X);
         t: for (; 0 < st; ) {
-          var rt = st - 1 >>> 1, gt = B[rt];
-          if (0 < r(gt, X)) B[rt] = X, B[st] = gt, st = rt;
+          var ot = st - 1 >>> 1, gt = B[ot];
+          if (0 < r(gt, X)) B[ot] = X, B[st] = gt, st = ot;
           else break t;
         }
       }
@@ -391,10 +391,10 @@ let __tla = (async () => {
         var X = B[0], st = B.pop();
         if (st !== X) {
           B[0] = st;
-          t: for (var rt = 0, gt = B.length, Y = gt >>> 1; rt < Y; ) {
-            var tt = 2 * (rt + 1) - 1, pt = B[tt], _t = tt + 1, Tt = B[_t];
-            if (0 > r(pt, st)) _t < gt && 0 > r(Tt, pt) ? (B[rt] = Tt, B[_t] = st, rt = _t) : (B[rt] = pt, B[tt] = st, rt = tt);
-            else if (_t < gt && 0 > r(Tt, st)) B[rt] = Tt, B[_t] = st, rt = _t;
+          t: for (var ot = 0, gt = B.length, Y = gt >>> 1; ot < Y; ) {
+            var tt = 2 * (ot + 1) - 1, pt = B[tt], _t = tt + 1, Tt = B[_t];
+            if (0 > r(pt, st)) _t < gt && 0 > r(Tt, pt) ? (B[ot] = Tt, B[_t] = st, ot = _t) : (B[ot] = pt, B[tt] = st, ot = tt);
+            else if (_t < gt && 0 > r(Tt, st)) B[ot] = Tt, B[_t] = st, ot = _t;
             else break t;
           }
         }
@@ -431,9 +431,9 @@ let __tla = (async () => {
           X !== null && Ft(j, X.startTime - B);
         }
       }
-      var q = false, P = -1, lt = 5, ct = -1;
+      var q = false, P = -1, rt = 5, ct = -1;
       function ht() {
-        return z ? true : !(e.unstable_now() - ct < lt);
+        return z ? true : !(e.unstable_now() - ct < rt);
       }
       function ft() {
         if (z = false, q) {
@@ -447,10 +447,10 @@ let __tla = (async () => {
               try {
                 e: {
                   for (H(B), S = i(m); S !== null && !(S.expirationTime > B && ht()); ) {
-                    var rt = S.callback;
-                    if (typeof rt == "function") {
+                    var ot = S.callback;
+                    if (typeof ot == "function") {
                       S.callback = null, M = S.priorityLevel;
-                      var gt = rt(S.expirationTime <= B);
+                      var gt = ot(S.expirationTime <= B);
                       if (B = e.unstable_now(), typeof gt == "function") {
                         S.callback = gt, H(B), X = true;
                         break e;
@@ -496,7 +496,7 @@ let __tla = (async () => {
       e.unstable_IdlePriority = 5, e.unstable_ImmediatePriority = 1, e.unstable_LowPriority = 4, e.unstable_NormalPriority = 3, e.unstable_Profiling = null, e.unstable_UserBlockingPriority = 2, e.unstable_cancelCallback = function(B) {
         B.callback = null;
       }, e.unstable_forceFrameRate = function(B) {
-        0 > B || 125 < B ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : lt = 0 < B ? Math.floor(1e3 / B) : 5;
+        0 > B || 125 < B ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : rt = 0 < B ? Math.floor(1e3 / B) : 5;
       }, e.unstable_getCurrentPriorityLevel = function() {
         return M;
       }, e.unstable_next = function(B) {
@@ -537,8 +537,8 @@ let __tla = (async () => {
           M = st;
         }
       }, e.unstable_scheduleCallback = function(B, X, st) {
-        var rt = e.unstable_now();
-        switch (typeof st == "object" && st !== null ? (st = st.delay, st = typeof st == "number" && 0 < st ? rt + st : rt) : st = rt, B) {
+        var ot = e.unstable_now();
+        switch (typeof st == "object" && st !== null ? (st = st.delay, st = typeof st == "number" && 0 < st ? ot + st : ot) : st = ot, B) {
           case 1:
             var gt = -1;
             break;
@@ -561,7 +561,7 @@ let __tla = (async () => {
           startTime: st,
           expirationTime: gt,
           sortIndex: -1
-        }, st > rt ? (B.sortIndex = st, t(_, B), i(m) === null && B === i(_) && (N ? (O(P), P = -1) : N = true, Ft(j, st - rt))) : (B.sortIndex = gt, t(m, B), C || E || (C = true, q || (q = true, Ct()))), B;
+        }, st > ot ? (B.sortIndex = st, t(_, B), i(m) === null && B === i(_) && (N ? (O(P), P = -1) : N = true, Ft(j, st - ot))) : (B.sortIndex = gt, t(m, B), C || E || (C = true, q || (q = true, Ct()))), B;
       }, e.unstable_shouldYield = ht, e.unstable_wrapCallback = function(B) {
         var X = M;
         return function() {
@@ -828,7 +828,7 @@ let __tla = (async () => {
       }
       return null;
     }
-    var S = Object.assign, M = Symbol.for("react.element"), E = Symbol.for("react.transitional.element"), C = Symbol.for("react.portal"), N = Symbol.for("react.fragment"), z = Symbol.for("react.strict_mode"), D = Symbol.for("react.profiler"), O = Symbol.for("react.consumer"), U = Symbol.for("react.context"), H = Symbol.for("react.forward_ref"), j = Symbol.for("react.suspense"), q = Symbol.for("react.suspense_list"), P = Symbol.for("react.memo"), lt = Symbol.for("react.lazy"), ct = Symbol.for("react.activity"), ht = Symbol.for("react.memo_cache_sentinel"), ft = Symbol.iterator;
+    var S = Object.assign, M = Symbol.for("react.element"), E = Symbol.for("react.transitional.element"), C = Symbol.for("react.portal"), N = Symbol.for("react.fragment"), z = Symbol.for("react.strict_mode"), D = Symbol.for("react.profiler"), O = Symbol.for("react.consumer"), U = Symbol.for("react.context"), H = Symbol.for("react.forward_ref"), j = Symbol.for("react.suspense"), q = Symbol.for("react.suspense_list"), P = Symbol.for("react.memo"), rt = Symbol.for("react.lazy"), ct = Symbol.for("react.activity"), ht = Symbol.for("react.memo_cache_sentinel"), ft = Symbol.iterator;
     function Ct(n) {
       return n === null || typeof n != "object" ? null : (n = ft && n[ft] || n["@@iterator"], typeof n == "function" ? n : null);
     }
@@ -863,7 +863,7 @@ let __tla = (async () => {
           return n = n.displayName, n || (n = s.displayName || s.name || "", n = n !== "" ? "ForwardRef(" + n + ")" : "ForwardRef"), n;
         case P:
           return s = n.displayName || null, s !== null ? s : Nt(n.type) || "Memo";
-        case lt:
+        case rt:
           s = n._payload, n = n._init;
           try {
             return Nt(n(s));
@@ -877,17 +877,17 @@ let __tla = (async () => {
       data: null,
       method: null,
       action: null
-    }, rt = [], gt = -1;
+    }, ot = [], gt = -1;
     function Y(n) {
       return {
         current: n
       };
     }
     function tt(n) {
-      0 > gt || (n.current = rt[gt], rt[gt] = null, gt--);
+      0 > gt || (n.current = ot[gt], ot[gt] = null, gt--);
     }
     function pt(n, s) {
-      gt++, rt[gt] = n.current, n.current = s;
+      gt++, ot[gt] = n.current, n.current = s;
     }
     var _t = Y(null), Tt = Y(null), jt = Y(null), kt = Y(null);
     function St(n, s) {
@@ -2495,7 +2495,7 @@ Error generating stack: ` + f.message + `
             case P:
               A = 14;
               break t;
-            case lt:
+            case rt:
               A = 16, f = null;
               break t;
           }
@@ -2937,7 +2937,7 @@ Error generating stack: ` + f.message + `
       }
       function G(K, L, k, it) {
         var Ot = k.type;
-        return Ot === N ? et(K, L, k.props.children, it, k.key) : L !== null && (L.elementType === Ot || typeof Ot == "object" && Ot !== null && Ot.$$typeof === lt && Cl(Ot) === L.type) ? (L = y(L, k.props), Co(L, k), L.return = K, L) : (L = bo(k.type, k.key, k.props, null, K.mode, it), Co(L, k), L.return = K, L);
+        return Ot === N ? et(K, L, k.props.children, it, k.key) : L !== null && (L.elementType === Ot || typeof Ot == "object" && Ot !== null && Ot.$$typeof === rt && Cl(Ot) === L.type) ? (L = y(L, k.props), Co(L, k), L.return = K, L) : (L = bo(k.type, k.key, k.props, null, K.mode, it), Co(L, k), L.return = K, L);
       }
       function W(K, L, k, it) {
         return L === null || L.tag !== 4 || L.stateNode.containerInfo !== k.containerInfo || L.stateNode.implementation !== k.implementation ? (L = ns(k, K.mode, it), L.return = K, L) : (L = y(L, k.children || []), L.return = K, L);
@@ -2953,7 +2953,7 @@ Error generating stack: ` + f.message + `
               return k = bo(L.type, L.key, L.props, null, K.mode, k), Co(k, L), k.return = K, k;
             case C:
               return L = ns(L, K.mode, k), L.return = K, L;
-            case lt:
+            case rt:
               return L = Cl(L), at(K, L, k);
           }
           if (Ft(L) || Ct(L)) return L = Js(L, K.mode, k, null), L.return = K, L;
@@ -2972,7 +2972,7 @@ Error generating stack: ` + f.message + `
               return k.key === Ot ? G(K, L, k, it) : null;
             case C:
               return k.key === Ot ? W(K, L, k, it) : null;
-            case lt:
+            case rt:
               return k = Cl(k), J(K, L, k, it);
           }
           if (Ft(k) || Ct(k)) return Ot !== null ? null : et(K, L, k, it, null);
@@ -2990,7 +2990,7 @@ Error generating stack: ` + f.message + `
               return K = K.get(it.key === null ? k : it.key) || null, G(L, K, it, Ot);
             case C:
               return K = K.get(it.key === null ? k : it.key) || null, W(L, K, it, Ot);
-            case lt:
+            case rt:
               return it = Cl(it), $(K, L, k, it, Ot);
           }
           if (Ft(it) || Ct(it)) return K = K.get(k) || null, et(L, K, it, Ot, null);
@@ -3053,7 +3053,7 @@ Error generating stack: ` + f.message + `
                         u(K, L.sibling), it = y(L, k.props.children), it.return = K, K = it;
                         break t;
                       }
-                    } else if (L.elementType === Ot || typeof Ot == "object" && Ot !== null && Ot.$$typeof === lt && Cl(Ot) === L.type) {
+                    } else if (L.elementType === Ot || typeof Ot == "object" && Ot !== null && Ot.$$typeof === rt && Cl(Ot) === L.type) {
                       u(K, L.sibling), it = y(L, k.props), Co(it, k), it.return = K, K = it;
                       break t;
                     }
@@ -3081,7 +3081,7 @@ Error generating stack: ` + f.message + `
                 it = ns(k, K.mode, it), it.return = K, K = it;
               }
               return A(K);
-            case lt:
+            case rt:
               return k = Cl(k), Ee(K, L, k, it);
           }
           if (Ft(k)) return Mt(K, L, k, it);
@@ -9594,7 +9594,7 @@ ${e.stack}` : a;
     return {
       schedule: um.reduce((U, H) => {
         const j = h[H];
-        return U[H] = (q, P = false, lt = false) => (i || z(), j.schedule(q, P, lt)), U;
+        return U[H] = (q, P = false, rt = false) => (i || z(), j.schedule(q, P, rt)), U;
       }, {}),
       cancel: (U) => {
         for (let H = 0; H < um.length; H++) h[um[H]].cancel(U);
@@ -9983,8 +9983,8 @@ ${e.stack}` : a;
     else {
       const j = D * Math.sqrt(N * N - 1);
       U = (q) => {
-        const P = Math.exp(-N * D * q), lt = Math.min(j * q, 300);
-        return h - P * ((C + N * D * z) * Math.sinh(lt) + j * z * Math.cosh(lt)) / j;
+        const P = Math.exp(-N * D * q), rt = Math.min(j * q, 300);
+        return h - P * ((C + N * D * z) * Math.sinh(rt) + j * z * Math.cosh(rt)) / j;
       };
     }
     const H = {
@@ -9995,8 +9995,8 @@ ${e.stack}` : a;
         else {
           let P = j === 0 ? C : 0;
           N < 1 && (P = j === 0 ? ll(C) : Zb(U, j, q));
-          const lt = Math.abs(P) <= a, ct = Math.abs(h - q) <= r;
-          p.done = lt && ct;
+          const rt = Math.abs(P) <= a, ct = Math.abs(h - q) <= r;
+          p.done = rt && ct;
         }
         return p.value = p.done ? h : q, p;
       },
@@ -10017,22 +10017,22 @@ ${e.stack}` : a;
     const S = e[0], M = {
       done: false,
       value: S
-    }, E = (lt) => p !== void 0 && lt < p || m !== void 0 && lt > m, C = (lt) => p === void 0 ? m : m === void 0 || Math.abs(p - lt) < Math.abs(m - lt) ? p : m;
+    }, E = (rt) => p !== void 0 && rt < p || m !== void 0 && rt > m, C = (rt) => p === void 0 ? m : m === void 0 || Math.abs(p - rt) < Math.abs(m - rt) ? p : m;
     let N = i * t;
     const z = S + N, D = h === void 0 ? z : h(z);
     D !== z && (N = D - S);
-    const O = (lt) => -N * Math.exp(-lt / a), U = (lt) => D + O(lt), H = (lt) => {
-      const ct = O(lt), ht = U(lt);
+    const O = (rt) => -N * Math.exp(-rt / a), U = (rt) => D + O(rt), H = (rt) => {
+      const ct = O(rt), ht = U(rt);
       M.done = Math.abs(ct) <= _, M.value = M.done ? D : ht;
     };
     let j, q;
-    const P = (lt) => {
-      E(M.value) && (j = lt, q = Um({
+    const P = (rt) => {
+      E(M.value) && (j = rt, q = Um({
         keyframes: [
           M.value,
           C(M.value)
         ],
-        velocity: Zb(U, lt, M.value),
+        velocity: Zb(U, rt, M.value),
         damping: r,
         stiffness: c,
         restDelta: _,
@@ -10041,9 +10041,9 @@ ${e.stack}` : a;
     };
     return P(0), {
       calculatedDuration: null,
-      next: (lt) => {
+      next: (rt) => {
         let ct = false;
-        return !q && j === void 0 && (ct = true, H(lt), P(lt)), j !== void 0 && lt >= j ? q.next(lt - j) : (!ct && H(lt), M);
+        return !q && j === void 0 && (ct = true, H(rt), P(rt)), j !== void 0 && rt >= j ? q.next(rt - j) : (!ct && H(rt), M);
       }
     };
   }
@@ -10189,9 +10189,9 @@ ${e.stack}` : a;
       this.currentTime = Math.max(D, 0), this.state === "finished" && this.holdTime === null && (this.currentTime = r);
       let U = this.currentTime, H = a;
       if (S) {
-        const lt = Math.min(this.currentTime, r) / p;
-        let ct = Math.floor(lt), ht = lt % 1;
-        !ht && lt >= 1 && (ht = 1), ht === 1 && ct--, ct = Math.min(ct, S + 1), !!(ct % 2) && (M === "reverse" ? (ht = 1 - ht, E && (ht -= E / p)) : M === "mirror" && (H = h)), U = kl(0, 1, ht) * p;
+        const rt = Math.min(this.currentTime, r) / p;
+        let ct = Math.floor(rt), ht = rt % 1;
+        !ht && rt >= 1 && (ht = 1), ht === 1 && ct--, ct = Math.min(ct, S + 1), !!(ct % 2) && (M === "reverse" ? (ht = 1 - ht, E && (ht -= E / p)) : M === "mirror" && (H = h)), U = kl(0, 1, ht) * p;
       }
       const j = O ? {
         done: false,
@@ -11675,10 +11675,10 @@ ${e.stack}` : a;
         const C = l3(x);
         _ = C.MeasureLayout, M.visualElement = n3(e, E, x, a, C.ProjectionNode);
       }
-      return ot.jsxs(Km.Provider, {
+      return lt.jsxs(Km.Provider, {
         value: M,
         children: [
-          _ && M.visualElement ? ot.jsx(_, {
+          _ && M.visualElement ? lt.jsx(_, {
             visualElement: M.visualElement,
             ...x
           }) : null,
@@ -12385,7 +12385,7 @@ ${e.stack}` : a;
           ...E
         }, !O.isActive && j === null || !U && !O.prevProp || Zm(U) || typeof U == "boolean") continue;
         const P = L3(O.prevProp, U);
-        let lt = P || D === m && O.isActive && !q && H || z > C && H, ct = false;
+        let rt = P || D === m && O.isActive && !q && H || z > C && H, ct = false;
         const ht = Array.isArray(U) ? U : [
           U
         ];
@@ -12395,30 +12395,30 @@ ${e.stack}` : a;
           ...Ct,
           ...ft
         }, Nt = (X) => {
-          lt = true, M.has(X) && (ct = true, M.delete(X)), O.needsAnimating[X] = true;
+          rt = true, M.has(X) && (ct = true, M.delete(X)), O.needsAnimating[X] = true;
           const st = e.getValue(X);
           st && (st.liveStyle = false);
         };
         for (const X in Ut) {
-          const st = ft[X], rt = Ct[X];
+          const st = ft[X], ot = Ct[X];
           if (E.hasOwnProperty(X)) continue;
           let gt = false;
-          c0(st) && c0(rt) ? gt = !VS(st, rt) : gt = st !== rt, gt ? st != null ? Nt(X) : M.add(X) : st !== void 0 && M.has(X) ? Nt(X) : O.protectedKeys[X] = true;
+          c0(st) && c0(ot) ? gt = !VS(st, ot) : gt = st !== ot, gt ? st != null ? Nt(X) : M.add(X) : st !== void 0 && M.has(X) ? Nt(X) : O.protectedKeys[X] = true;
         }
         O.prevProp = U, O.prevResolvedValues = ft, O.isActive && (E = {
           ...E,
           ...ft
-        }), a && e.blockInitialAnimation && (lt = false);
+        }), a && e.blockInitialAnimation && (rt = false);
         const Ft = q && P;
-        lt && (!Ft || ct) && S.push(...ht.map((X) => {
+        rt && (!Ft || ct) && S.push(...ht.map((X) => {
           const st = {
             type: D
           };
           if (typeof X == "string" && a && !Ft && e.manuallyAnimateOnMount && e.parent) {
-            const { parent: rt } = e, gt = Lc(rt, X);
-            if (rt.enteringChildren && gt) {
+            const { parent: ot } = e, gt = Lc(ot, X);
+            if (ot.enteringChildren && gt) {
               const { delayChildren: Y } = gt.transition || {};
-              st.delay = HS(rt.enteringChildren, e, Y);
+              st.delay = HS(ot.enteringChildren, e, Y);
             }
           }
           return {
@@ -13074,7 +13074,7 @@ ${e.stack}` : a;
   }
   function PS(e) {
     const [t, i] = zC(), a = ut.useContext(Sb);
-    return ot.jsx(p5, {
+    return lt.jsx(p5, {
       ...e,
       layoutGroup: a,
       switchLayoutGroup: ut.useContext(MS),
@@ -14022,7 +14022,7 @@ ${e.stack}` : a;
     }
   };
   function c4(e) {
-    return ot.jsx(o4.div, {
+    return lt.jsx(o4.div, {
       variants: u4,
       initial: "initial",
       animate: "animate",
@@ -14248,7 +14248,7 @@ ${e.stack}` : a;
     },
     test: () => true,
     load: async () => {
-      await Gm(() => import("./browserAll-Y6e8vGVQ.js").then(async (m) => {
+      await Gm(() => import("./browserAll-DgY-cROI.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([0,1,2]));
@@ -14262,7 +14262,7 @@ ${e.stack}` : a;
     },
     test: () => typeof self < "u" && self.WorkerGlobalScope !== void 0,
     load: async () => {
-      await Gm(() => import("./webworkerAll-hfLcr_AJ.js").then(async (m) => {
+      await Gm(() => import("./webworkerAll-YI6_9JWH.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([1,2]));
@@ -14701,8 +14701,8 @@ ${e.stack}` : a;
     }
     intersects(t, i) {
       if (!i) {
-        const lt = this.x < t.x ? t.x : this.x;
-        if ((this.right > t.right ? t.right : this.right) <= lt) return false;
+        const rt = this.x < t.x ? t.x : this.x;
+        if ((this.right > t.right ? t.right : this.right) <= rt) return false;
         const ht = this.y < t.y ? t.y : this.y;
         return (this.bottom > t.bottom ? t.bottom : this.bottom) > ht;
       }
@@ -19281,7 +19281,7 @@ ${e}`;
       const h = t[c];
       if (h === "webgpu" && await h6()) {
         const { WebGPURenderer: p } = await Gm(async () => {
-          const { WebGPURenderer: m } = await import("./WebGPURenderer-BMCWVOKm.js").then(async (m7) => {
+          const { WebGPURenderer: m } = await import("./WebGPURenderer-CseNsQNV.js").then(async (m7) => {
             await m7.__tla;
             return m7;
           });
@@ -19296,7 +19296,7 @@ ${e}`;
         break;
       } else if (h === "webgl" && c6(e.failIfMajorPerformanceCaveat ?? F2.defaultOptions.failIfMajorPerformanceCaveat)) {
         const { WebGLRenderer: p } = await Gm(async () => {
-          const { WebGLRenderer: m } = await import("./WebGLRenderer-zp7Nvm21.js").then(async (m7) => {
+          const { WebGLRenderer: m } = await import("./WebGLRenderer-C4LDM4F3.js").then(async (m7) => {
             await m7.__tla;
             return m7;
           });
@@ -19574,8 +19574,8 @@ ${e}`;
               q = ct, P++;
             }
             H += P - 1;
-            const lt = zt._getFromCache(j, _, m, r);
-            lt + c > C && (p += zt._addLine(h), E = false, h = "", c = 0), h += j, c += lt;
+            const rt = zt._getFromCache(j, _, m, r);
+            rt + c > C && (p += zt._addLine(h), E = false, h = "", c = 0), h += j, c += rt;
           }
         } else {
           h.length > 0 && (p += zt._addLine(h), h = "", c = 0);
@@ -21202,8 +21202,8 @@ ${r.join(`
         t[M++] = D, t[M++] = H, t[--E] = H, t[--E] = z;
       }
       for (let H = 1; H < m; H++) {
-        const j = Math.PI / 2 * (H / m), q = r + Math.cos(j) * h, P = c + Math.sin(j) * p, lt = i + q, ct = i - q, ht = a + P, ft = a - P;
-        t[x++] = lt, t[x++] = ht, t[--S] = ht, t[--S] = ct, t[M++] = ct, t[M++] = ft, t[--E] = ft, t[--E] = lt;
+        const j = Math.PI / 2 * (H / m), q = r + Math.cos(j) * h, P = c + Math.sin(j) * p, rt = i + q, ct = i - q, ht = a + P, ft = a - P;
+        t[x++] = rt, t[x++] = ht, t[--S] = ht, t[--S] = ct, t[M++] = ct, t[M++] = ft, t[--E] = ft, t[--E] = rt;
       }
       C = r, N = c + p, z = i + C, D = i - C, O = a + N;
       const U = a - N;
@@ -21273,35 +21273,35 @@ ${r.join(`
     const p = t;
     let m = p.alignment;
     if (t.alignment !== 0.5) {
-      let rt = bR(e);
-      m = (m - 0.5) * rt + 0.5;
+      let ot = bR(e);
+      m = (m - 0.5) * ot + 0.5;
     }
     const _ = new ce(e[0], e[1]), x = new ce(e[e.length - 2], e[e.length - 1]), S = a, M = Math.abs(_.x - x.x) < h && Math.abs(_.y - x.y) < h;
     if (S) {
       e = e.slice(), M && (e.pop(), e.pop(), x.set(e[e.length - 2], e[e.length - 1]));
-      const rt = (_.x + x.x) * 0.5, gt = (x.y + _.y) * 0.5;
-      e.unshift(rt, gt), e.push(rt, gt);
+      const ot = (_.x + x.x) * 0.5, gt = (x.y + _.y) * 0.5;
+      e.unshift(ot, gt), e.push(ot, gt);
     }
     const E = r, C = e.length / 2;
     let N = e.length;
     const z = E.length / 2, D = p.width / 2, O = D * D, U = p.miterLimit * p.miterLimit;
-    let H = e[0], j = e[1], q = e[2], P = e[3], lt = 0, ct = 0, ht = -(j - P), ft = H - q, Ct = 0, Ut = 0, Nt = Math.sqrt(ht * ht + ft * ft);
+    let H = e[0], j = e[1], q = e[2], P = e[3], rt = 0, ct = 0, ht = -(j - P), ft = H - q, Ct = 0, Ut = 0, Nt = Math.sqrt(ht * ht + ft * ft);
     ht /= Nt, ft /= Nt, ht *= D, ft *= D;
     const Ft = m, B = (1 - Ft) * 2, X = Ft * 2;
     S || (p.cap === "round" ? N += Jo(H - ht * (B - X) * 0.5, j - ft * (B - X) * 0.5, H - ht * B, j - ft * B, H + ht * X, j + ft * X, E, true) + 2 : p.cap === "square" && (N += Lx(H, j, ht, ft, B, X, true, E))), E.push(H - ht * B, j - ft * B), E.push(H + ht * X, j + ft * X);
-    for (let rt = 1; rt < C - 1; ++rt) {
-      H = e[(rt - 1) * 2], j = e[(rt - 1) * 2 + 1], q = e[rt * 2], P = e[rt * 2 + 1], lt = e[(rt + 1) * 2], ct = e[(rt + 1) * 2 + 1], ht = -(j - P), ft = H - q, Nt = Math.sqrt(ht * ht + ft * ft), ht /= Nt, ft /= Nt, ht *= D, ft *= D, Ct = -(P - ct), Ut = q - lt, Nt = Math.sqrt(Ct * Ct + Ut * Ut), Ct /= Nt, Ut /= Nt, Ct *= D, Ut *= D;
-      const gt = q - H, Y = j - P, tt = q - lt, pt = ct - P, _t = gt * tt + Y * pt, Tt = Y * tt - pt * gt, jt = Tt < 0;
+    for (let ot = 1; ot < C - 1; ++ot) {
+      H = e[(ot - 1) * 2], j = e[(ot - 1) * 2 + 1], q = e[ot * 2], P = e[ot * 2 + 1], rt = e[(ot + 1) * 2], ct = e[(ot + 1) * 2 + 1], ht = -(j - P), ft = H - q, Nt = Math.sqrt(ht * ht + ft * ft), ht /= Nt, ft /= Nt, ht *= D, ft *= D, Ct = -(P - ct), Ut = q - rt, Nt = Math.sqrt(Ct * Ct + Ut * Ut), Ct /= Nt, Ut /= Nt, Ct *= D, Ut *= D;
+      const gt = q - H, Y = j - P, tt = q - rt, pt = ct - P, _t = gt * tt + Y * pt, Tt = Y * tt - pt * gt, jt = Tt < 0;
       if (Math.abs(Tt) < 1e-3 * Math.abs(_t)) {
         E.push(q - ht * B, P - ft * B), E.push(q + ht * X, P + ft * X), _t >= 0 && (p.join === "round" ? N += Jo(q, P, q - ht * B, P - ft * B, q - Ct * B, P - Ut * B, E, false) + 4 : N += 2, E.push(q - Ct * X, P - Ut * X), E.push(q + Ct * B, P + Ut * B));
         continue;
       }
-      const kt = (-ht + H) * (-ft + P) - (-ht + q) * (-ft + j), St = (-Ct + lt) * (-Ut + P) - (-Ct + q) * (-Ut + ct), Et = (gt * St - tt * kt) / Tt, wn = (pt * kt - Y * St) / Tt, Vi = (Et - q) * (Et - q) + (wn - P) * (wn - P), jn = q + (Et - q) * B, Jn = P + (wn - P) * B, fn = q - (Et - q) * X, In = P - (wn - P) * X, ul = Math.min(gt * gt + Y * Y, tt * tt + pt * pt), Ii = jt ? B : X, kr = ul + Ii * Ii * O;
+      const kt = (-ht + H) * (-ft + P) - (-ht + q) * (-ft + j), St = (-Ct + rt) * (-Ut + P) - (-Ct + q) * (-Ut + ct), Et = (gt * St - tt * kt) / Tt, wn = (pt * kt - Y * St) / Tt, Vi = (Et - q) * (Et - q) + (wn - P) * (wn - P), jn = q + (Et - q) * B, Jn = P + (wn - P) * B, fn = q - (Et - q) * X, In = P - (wn - P) * X, ul = Math.min(gt * gt + Y * Y, tt * tt + pt * pt), Ii = jt ? B : X, kr = ul + Ii * Ii * O;
       Vi <= kr ? p.join === "bevel" || Vi / O > U ? (jt ? (E.push(jn, Jn), E.push(q + ht * X, P + ft * X), E.push(jn, Jn), E.push(q + Ct * X, P + Ut * X)) : (E.push(q - ht * B, P - ft * B), E.push(fn, In), E.push(q - Ct * B, P - Ut * B), E.push(fn, In)), N += 2) : p.join === "round" ? jt ? (E.push(jn, Jn), E.push(q + ht * X, P + ft * X), N += Jo(q, P, q + ht * X, P + ft * X, q + Ct * X, P + Ut * X, E, true) + 4, E.push(jn, Jn), E.push(q + Ct * X, P + Ut * X)) : (E.push(q - ht * B, P - ft * B), E.push(fn, In), N += Jo(q, P, q - ht * B, P - ft * B, q - Ct * B, P - Ut * B, E, false) + 4, E.push(q - Ct * B, P - Ut * B), E.push(fn, In)) : (E.push(jn, Jn), E.push(fn, In)) : (E.push(q - ht * B, P - ft * B), E.push(q + ht * X, P + ft * X), p.join === "round" ? jt ? N += Jo(q, P, q + ht * X, P + ft * X, q + Ct * X, P + Ut * X, E, true) + 2 : N += Jo(q, P, q - ht * B, P - ft * B, q - Ct * B, P - Ut * B, E, false) + 2 : p.join === "miter" && Vi / O <= U && (jt ? (E.push(fn, In), E.push(fn, In)) : (E.push(jn, Jn), E.push(jn, Jn)), N += 2), E.push(q - Ct * B, P - Ut * B), E.push(q + Ct * X, P + Ut * X), N += 2);
     }
     H = e[(C - 2) * 2], j = e[(C - 2) * 2 + 1], q = e[(C - 1) * 2], P = e[(C - 1) * 2 + 1], ht = -(j - P), ft = H - q, Nt = Math.sqrt(ht * ht + ft * ft), ht /= Nt, ft /= Nt, ht *= D, ft *= D, E.push(q - ht * B, P - ft * B), E.push(q + ht * X, P + ft * X), S || (p.cap === "round" ? N += Jo(q - ht * (B - X) * 0.5, P - ft * (B - X) * 0.5, q - ht * B, P - ft * B, q + ht * X, P + ft * X, E, false) + 2 : p.cap === "square" && (N += Lx(q, P, ht, ft, B, X, false, E)));
     const st = Yx * Yx;
-    for (let rt = z; rt < N + z - 2; ++rt) H = E[rt * 2], j = E[rt * 2 + 1], q = E[(rt + 1) * 2], P = E[(rt + 1) * 2 + 1], lt = E[(rt + 2) * 2], ct = E[(rt + 2) * 2 + 1], !(Math.abs(H * (P - ct) + q * (ct - j) + lt * (j - P)) < st) && c.push(rt, rt + 1, rt + 2);
+    for (let ot = z; ot < N + z - 2; ++ot) H = E[ot * 2], j = E[ot * 2 + 1], q = E[(ot + 1) * 2], P = E[(ot + 1) * 2 + 1], rt = E[(ot + 2) * 2], ct = E[(ot + 2) * 2 + 1], !(Math.abs(H * (P - ct) + q * (ct - j) + rt * (j - P)) < st) && c.push(ot, ot + 1, ot + 2);
   }
   function TR(e, t, i, a) {
     const r = hT;
@@ -21542,24 +21542,24 @@ ${r.join(`
     if (x > GR) return;
     const S = (e + i) / 2, M = (t + a) / 2, E = (i + r) / 2, C = (a + c) / 2, N = (r + h) / 2, z = (c + p) / 2, D = (S + E) / 2, O = (M + C) / 2, U = (E + N) / 2, H = (C + z) / 2, j = (D + U) / 2, q = (O + H) / 2;
     if (x > 0) {
-      let P = h - e, lt = p - t;
-      const ct = Math.abs((i - h) * lt - (a - p) * P), ht = Math.abs((r - h) * lt - (c - p) * P);
+      let P = h - e, rt = p - t;
+      const ct = Math.abs((i - h) * rt - (a - p) * P), ht = Math.abs((r - h) * rt - (c - p) * P);
       if (ct > Am && ht > Am) {
-        if ((ct + ht) * (ct + ht) <= _ * (P * P + lt * lt)) {
+        if ((ct + ht) * (ct + ht) <= _ * (P * P + rt * rt)) {
           m.push(j, q);
           return;
         }
       } else if (ct > Am) {
-        if (ct * ct <= _ * (P * P + lt * lt)) {
+        if (ct * ct <= _ * (P * P + rt * rt)) {
           m.push(j, q);
           return;
         }
       } else if (ht > Am) {
-        if (ht * ht <= _ * (P * P + lt * lt)) {
+        if (ht * ht <= _ * (P * P + rt * rt)) {
           m.push(j, q);
           return;
         }
-      } else if (P = j - (e + h) / 2, lt = q - (t + p) / 2, P * P + lt * lt <= _) {
+      } else if (P = j - (e + h) / 2, rt = q - (t + p) / 2, P * P + rt * rt <= _) {
         m.push(j, q);
         return;
       }
@@ -21607,7 +21607,7 @@ ${r.join(`
       (e[e.length - 2] !== t || e[e.length - 1] !== i) && e.push(t, i);
       return;
     }
-    const E = m * m + _ * _, C = x * x + S * S, N = m * x + _ * S, z = c * Math.sqrt(E) / M, D = c * Math.sqrt(C) / M, O = z * N / E, U = D * N / C, H = z * S + D * _, j = z * x + D * m, q = _ * (D + O), P = m * (D + O), lt = S * (z + U), ct = x * (z + U), ht = Math.atan2(P - j, q - H), ft = Math.atan2(ct - j, lt - H);
+    const E = m * m + _ * _, C = x * x + S * S, N = m * x + _ * S, z = c * Math.sqrt(E) / M, D = c * Math.sqrt(C) / M, O = z * N / E, U = D * N / C, H = z * S + D * _, j = z * x + D * m, q = _ * (D + O), P = m * (D + O), rt = S * (z + U), ct = x * (z + U), ht = Math.atan2(P - j, q - H), ft = Math.atan2(ct - j, rt - H);
     mT(e, H + t, j + i, c, ht, ft, _ * x > S * m);
   }
   const ad = Math.PI * 2, Hg = {
@@ -21645,8 +21645,8 @@ ${r.join(`
     const E = Math.pow(r, 2), C = Math.pow(c, 2), N = Math.pow(x, 2), z = Math.pow(S, 2);
     let D = E * C - E * z - C * N;
     D < 0 && (D = 0), D /= E * z + C * N, D = Math.sqrt(D) * (h === p ? -1 : 1);
-    const O = D * r / c * S, U = D * -c / r * x, H = _ * O - m * U + (e + i) / 2, j = m * O + _ * U + (t + a) / 2, q = (x - O) / r, P = (S - U) / c, lt = (-x - O) / r, ct = (-S - U) / c, ht = qx(1, 0, q, P);
-    let ft = qx(q, P, lt, ct);
+    const O = D * r / c * S, U = D * -c / r * x, H = _ * O - m * U + (e + i) / 2, j = m * O + _ * U + (t + a) / 2, q = (x - O) / r, P = (S - U) / c, rt = (-x - O) / r, ct = (-S - U) / c, ht = qx(1, 0, q, P);
+    let ft = qx(q, P, rt, ct);
     p === 0 && ft > 0 && (ft -= ad), p === 1 && ft < 0 && (ft += ad), M.centerX = H, M.centerY = j, M.ang1 = ht, M.ang2 = ft;
   };
   function WR(e, t, i, a, r, c, h, p = 0, m = 0, _ = 0) {
@@ -21667,7 +21667,7 @@ ${r.join(`
       x: 0,
       y: 0
     };
-    for (let lt = 0; lt < H; lt++) {
+    for (let rt = 0; rt < H; rt++) {
       const ct = ZR(N, z), { x: ht, y: ft } = Vg(ct[0], c, h, S, x, D, O, P), { x: Ct, y: Ut } = Vg(ct[1], c, h, S, x, D, O, P), { x: Nt, y: Ft } = Vg(ct[2], c, h, S, x, D, O, P);
       pT(e, j, q, ht, ft, Ct, Ut, Nt, Ft), j = Nt, q = Ft, N += z;
     }
@@ -22384,7 +22384,7 @@ ${r.join(`
     p && (i = {
       color: 0
     });
-    let m, _, x, S, M, E, C, N, z, D, O, U, H, j, q, P, lt;
+    let m, _, x, S, M, E, C, N, z, D, O, U, H, j, q, P, rt;
     switch (e.nodeName.toLowerCase()) {
       case "path": {
         j = e.getAttribute("d");
@@ -22397,14 +22397,14 @@ ${r.join(`
           if (Nt.sort((B, X) => X.area - B.area), ht.length > 3 || !iD(Nt)) for (let B = 0; B < Nt.length; B++) {
             const X = Nt[B], st = B === 0;
             t.context.beginPath();
-            const rt = new Zl(void 0, true);
-            Zx(X.path, rt), t.context.path(rt), st ? (i && t.context.fill(i), a && t.context.stroke(a)) : t.context.cut();
+            const ot = new Zl(void 0, true);
+            Zx(X.path, ot), t.context.path(ot), st ? (i && t.context.fill(i), a && t.context.stroke(a)) : t.context.cut();
           }
           else for (let B = 0; B < Nt.length; B++) {
             const X = Nt[B], st = B % 2 === 1;
             t.context.beginPath();
-            const rt = new Zl(void 0, true);
-            Zx(X.path, rt), t.context.path(rt), st ? t.context.cut() : (i && t.context.fill(i), a && t.context.stroke(a));
+            const ot = new Zl(void 0, true);
+            Zx(X.path, ot), t.context.path(ot), st ? t.context.cut() : (i && t.context.fill(i), a && t.context.stroke(a));
           }
         } else {
           const Nt = ct ? ct === "evenodd" : true;
@@ -22416,7 +22416,7 @@ ${r.join(`
         C = nn(e, "cx", 0), N = nn(e, "cy", 0), z = nn(e, "r", 0), t.context.ellipse(C, N, z, z), i && t.context.fill(i), a && t.context.stroke(a);
         break;
       case "rect":
-        m = nn(e, "x", 0), _ = nn(e, "y", 0), P = nn(e, "width", 0), lt = nn(e, "height", 0), D = nn(e, "rx", 0), O = nn(e, "ry", 0), D || O ? t.context.roundRect(m, _, P, lt, D || O) : t.context.rect(m, _, P, lt), i && t.context.fill(i), a && t.context.stroke(a);
+        m = nn(e, "x", 0), _ = nn(e, "y", 0), P = nn(e, "width", 0), rt = nn(e, "height", 0), D = nn(e, "rx", 0), O = nn(e, "ry", 0), D || O ? t.context.roundRect(m, _, P, rt, D || O) : t.context.rect(m, _, P, rt), i && t.context.fill(i), a && t.context.stroke(a);
         break;
       case "ellipse":
         C = nn(e, "cx", 0), N = nn(e, "cy", 0), D = nn(e, "rx", 0), O = nn(e, "ry", 0), t.context.beginPath(), t.context.ellipse(C, N, D, O), i && t.context.fill(i), a && t.context.stroke(a);
@@ -23500,8 +23500,8 @@ ${r.join(`
         }
         let P = (S - C.fontSize) / 2;
         S - C.fontSize < 0 && (P = 0);
-        const lt = ((_c = i._stroke) == null ? void 0 : _c.width) ?? 0;
-        for (let ct = 0; ct < x.length; ct++) z = lt / 2, D = lt / 2 + ct * S + C.ascent + P, i.align === "right" ? z += E - M[ct] : i.align === "center" && (z += (E - M[ct]) / 2), ((_d2 = i._stroke) == null ? void 0 : _d2.width) && this._drawLetterSpacing(x[ct], i, c, z + a, D + a - j, true), i._fill !== void 0 && this._drawLetterSpacing(x[ct], i, c, z + a, D + a - j);
+        const rt = ((_c = i._stroke) == null ? void 0 : _c.width) ?? 0;
+        for (let ct = 0; ct < x.length; ct++) z = rt / 2, D = rt / 2 + ct * S + C.ascent + P, i.align === "right" ? z += E - M[ct] : i.align === "center" && (z += (E - M[ct]) / 2), ((_d2 = i._stroke) == null ? void 0 : _d2.width) && this._drawLetterSpacing(x[ct], i, c, z + a, D + a - j, true), i._fill !== void 0 && this._drawLetterSpacing(x[ct], i, c, z + a, D + a - j);
       }
     }
     _drawLetterSpacing(t, i, a, r, c, h = false) {
@@ -23866,8 +23866,8 @@ ${r.join(`
         var st = B.length;
         B.push(X);
         t: for (; 0 < st; ) {
-          var rt = st - 1 >>> 1, gt = B[rt];
-          if (0 < r(gt, X)) B[rt] = X, B[st] = gt, st = rt;
+          var ot = st - 1 >>> 1, gt = B[ot];
+          if (0 < r(gt, X)) B[ot] = X, B[st] = gt, st = ot;
           else break t;
         }
       }
@@ -23879,10 +23879,10 @@ ${r.join(`
         var X = B[0], st = B.pop();
         if (st !== X) {
           B[0] = st;
-          t: for (var rt = 0, gt = B.length, Y = gt >>> 1; rt < Y; ) {
-            var tt = 2 * (rt + 1) - 1, pt = B[tt], _t = tt + 1, Tt = B[_t];
-            if (0 > r(pt, st)) _t < gt && 0 > r(Tt, pt) ? (B[rt] = Tt, B[_t] = st, rt = _t) : (B[rt] = pt, B[tt] = st, rt = tt);
-            else if (_t < gt && 0 > r(Tt, st)) B[rt] = Tt, B[_t] = st, rt = _t;
+          t: for (var ot = 0, gt = B.length, Y = gt >>> 1; ot < Y; ) {
+            var tt = 2 * (ot + 1) - 1, pt = B[tt], _t = tt + 1, Tt = B[_t];
+            if (0 > r(pt, st)) _t < gt && 0 > r(Tt, pt) ? (B[ot] = Tt, B[_t] = st, ot = _t) : (B[ot] = pt, B[tt] = st, ot = tt);
+            else if (_t < gt && 0 > r(Tt, st)) B[ot] = Tt, B[_t] = st, ot = _t;
             else break t;
           }
         }
@@ -23919,14 +23919,14 @@ ${r.join(`
           X !== null && Ft(H, X.startTime - B);
         }
       }
-      var j = false, q = -1, P = 5, lt = -1;
+      var j = false, q = -1, P = 5, rt = -1;
       function ct() {
-        return !(e.unstable_now() - lt < P);
+        return !(e.unstable_now() - rt < P);
       }
       function ht() {
         if (j) {
           var B = e.unstable_now();
-          lt = B;
+          rt = B;
           var X = true;
           try {
             t: {
@@ -23935,10 +23935,10 @@ ${r.join(`
               try {
                 e: {
                   for (U(B), S = i(m); S !== null && !(S.expirationTime > B && ct()); ) {
-                    var rt = S.callback;
-                    if (typeof rt == "function") {
+                    var ot = S.callback;
+                    if (typeof ot == "function") {
                       S.callback = null, M = S.priorityLevel;
-                      var gt = rt(S.expirationTime <= B);
+                      var gt = ot(S.expirationTime <= B);
                       if (B = e.unstable_now(), typeof gt == "function") {
                         S.callback = gt, U(B), X = true;
                         break e;
@@ -24032,8 +24032,8 @@ ${r.join(`
           M = st;
         }
       }, e.unstable_scheduleCallback = function(B, X, st) {
-        var rt = e.unstable_now();
-        switch (typeof st == "object" && st !== null ? (st = st.delay, st = typeof st == "number" && 0 < st ? rt + st : rt) : st = rt, B) {
+        var ot = e.unstable_now();
+        switch (typeof st == "object" && st !== null ? (st = st.delay, st = typeof st == "number" && 0 < st ? ot + st : ot) : st = ot, B) {
           case 1:
             var gt = -1;
             break;
@@ -24056,7 +24056,7 @@ ${r.join(`
           startTime: st,
           expirationTime: gt,
           sortIndex: -1
-        }, st > rt ? (B.sortIndex = st, t(_, B), i(m) === null && B === i(_) && (N ? (D(q), q = -1) : N = true, Ft(H, st - rt))) : (B.sortIndex = gt, t(m, B), C || E || (C = true, Nt())), B;
+        }, st > ot ? (B.sortIndex = st, t(_, B), i(m) === null && B === i(_) && (N ? (D(q), q = -1) : N = true, Ft(H, st - ot))) : (B.sortIndex = gt, t(m, B), C || E || (C = true, Nt())), B;
       }, e.unstable_shouldYield = ct, e.unstable_wrapCallback = function(B) {
         var X = M;
         return function() {
@@ -24470,7 +24470,7 @@ Error generating stack: ` + d.message + `
               return -1;
           }
         }
-        function lt() {
+        function rt() {
           var l = Tr;
           return Tr <<= 1, (Tr & 4194176) === 0 && (Tr = 128), l;
         }
@@ -24531,7 +24531,7 @@ Error generating stack: ` + d.message + `
         function st(l, o) {
           return l === o && (l !== 0 || 1 / l === 1 / o) || l !== l && o !== o;
         }
-        function rt(l, o) {
+        function ot(l, o) {
           if (typeof l == "object" && l !== null) {
             var d = fc.get(l);
             return d !== void 0 ? d : (o = {
@@ -24584,7 +24584,7 @@ Error generating stack: ` + d.message + `
         }
         function St(l) {
           var o = Error(r(418, ""));
-          throw Jn(rt(o, l)), Xo;
+          throw Jn(ot(o, l)), Xo;
         }
         function Et(l, o) {
           if (!Pn) throw Error(r(175));
@@ -24737,7 +24737,7 @@ Error generating stack: ` + d.message + `
           }) : Mr(yf, l);
         }
         function hu() {
-          return Fa === 0 && (Fa = lt()), Fa;
+          return Fa === 0 && (Fa = rt()), Fa;
         }
         function fu(l, o) {
           if (Qo === null) {
@@ -25977,16 +25977,16 @@ Error generating stack: ` + d.message + `
           }
           if (le) return o = wi.current, o !== null ? ((o.flags & 65536) === 0 && (o.flags |= 256), o.flags |= 65536, o.lanes = b, g !== Xo && (l = Error(r(422), {
             cause: g
-          }), Jn(rt(l, d)))) : (g !== Xo && (o = Error(r(423), {
+          }), Jn(ot(l, d)))) : (g !== Xo && (o = Error(r(423), {
             cause: g
-          }), Jn(rt(o, d))), l = l.current.alternate, l.flags |= 65536, b &= -b, l.lanes |= b, g = rt(g, d), b = ho(l.stateNode, g, b), Yn(l, b), ie !== 4 && (ie = 2)), false;
+          }), Jn(ot(o, d))), l = l.current.alternate, l.flags |= 65536, b &= -b, l.lanes |= b, g = ot(g, d), b = ho(l.stateNode, g, b), Yn(l, b), ie !== 4 && (ie = 2)), false;
           var T = Error(r(520), {
             cause: g
           });
-          if (T = rt(T, d), Or === null ? Or = [
+          if (T = ot(T, d), Or === null ? Or = [
             T
           ] : Or.push(T), ie !== 4 && (ie = 2), o === null) return true;
-          g = rt(g, d), d = o;
+          g = ot(g, d), d = o;
           do {
             switch (d.tag) {
               case 3:
@@ -26367,7 +26367,7 @@ Error generating stack: ` + d.message + `
                   o = Fd(l, o, T, d);
                   break t;
                 } else if (T !== g) {
-                  g = rt(Error(r(424)), o), Jn(g), o = Fd(l, o, T, d);
+                  g = ot(Error(r(424)), o), Jn(g), o = Fd(l, o, T, d);
                   break t;
                 } else for (Pn && (An = Sp(o.stateNode.containerInfo), Bn = o, le = true, Mi = null, Pi = true), d = vf(o, null, T, d), o.child = d; d; ) d.flags = d.flags & -3 | 4096, d = d.sibling;
                 else {
@@ -27801,7 +27801,7 @@ Error generating stack: ` + d.message + `
           return Xi();
         }
         function bs() {
-          ui === 0 && (ui = (Kt & 536870912) === 0 || le ? lt() : 536870912);
+          ui === 0 && (ui = (Kt & 536870912) === 0 || le ? rt() : 536870912);
           var l = wi.current;
           return l !== null && (l.flags |= 32), ui;
         }
@@ -27944,7 +27944,7 @@ Error generating stack: ` + d.message + `
           return us = o, fn(), d;
         }
         function Tl(l, o) {
-          Pt = null, Bt.H = re, o === ge ? (o = Jl(), xe = 3) : o === _f ? (o = Jl(), xe = 4) : xe = o === Lp ? 8 : o !== null && typeof o == "object" && typeof o.then == "function" ? 6 : 1, ke = o, Xt === null && (ie = 1, Cu(l, rt(o, l.current)));
+          Pt = null, Bt.H = re, o === ge ? (o = Jl(), xe = 3) : o === _f ? (o = Jl(), xe = 4) : xe = o === Lp ? 8 : o !== null && typeof o == "object" && typeof o.then == "function" ? 6 : 1, ke = o, Xt === null && (ie = 1, Cu(l, ot(o, l.current)));
         }
         function So() {
           var l = wi.current;
@@ -28100,12 +28100,12 @@ Error generating stack: ` + d.message + `
           var b = o.return;
           try {
             if (Pd(l, b, o, d, Kt)) {
-              ie = 1, Cu(l, rt(d, l.current)), Xt = null;
+              ie = 1, Cu(l, ot(d, l.current)), Xt = null;
               return;
             }
           } catch (T) {
             if (b !== null) throw Xt = b, T;
-            ie = 1, Cu(l, rt(d, l.current)), Xt = null;
+            ie = 1, Cu(l, ot(d, l.current)), Xt = null;
             return;
           }
           o.flags & 32768 ? (le || g === 1 ? l = true : Ci || (Kt & 536870912) !== 0 ? l = false : (pe = l = true, (g === 2 || g === 3 || g === 6) && (g = wi.current, g !== null && g.tag === 13 && (g.flags |= 16384))), pn(o, l)) : To(o);
@@ -28202,7 +28202,7 @@ Error generating stack: ` + d.message + `
           return false;
         }
         function Qu(l, o, d) {
-          o = rt(d, o), o = ho(l.stateNode, o, 2), l = Je(l, o, 2), l !== null && (ft(l, 2), Gi(l));
+          o = ot(d, o), o = ho(l.stateNode, o, 2), l = Je(l, o, 2), l !== null && (ft(l, 2), Gi(l));
         }
         function It(l, o, d) {
           if (l.tag === 3) Qu(l, l, d);
@@ -28213,7 +28213,7 @@ Error generating stack: ` + d.message + `
             } else if (o.tag === 1) {
               var g = o.stateNode;
               if (typeof o.type.getDerivedStateFromError == "function" || typeof g.componentDidCatch == "function" && (Di === null || !Di.has(g))) {
-                l = rt(d, l), d = ir(2), g = Je(o, d, 2), g !== null && (fo(d, g, o, l), ft(g, 2), Gi(g));
+                l = ot(d, l), d = ir(2), g = Je(o, d, 2), g !== null && (fo(d, g, o, l), ft(g, 2), Gi(g));
                 break;
               }
             }
@@ -29157,7 +29157,7 @@ No matching component was found for:
           }, (_a3 = t.onInit) == null ? void 0 : _a3.call(t, a.app)), Object.entries(_).forEach(([x, S]) => {
             const M = x;
             _T(_, M) || (a.app[M] = S);
-          }), Pm.updateContainer(ot.jsx(TD, {
+          }), Pm.updateContainer(lt.jsx(TD, {
             value: a,
             children: m
           }), c, null, () => {
@@ -29226,7 +29226,7 @@ No matching component was found for:
         let D = kc.get(z);
         D || (D = RO(z, {
           onInit: N
-        })), D.render(ot.jsx(x, {
+        })), D.render(lt.jsx(x, {
           children: a
         }), _);
       }
@@ -29248,13 +29248,13 @@ No matching component was found for:
       if (z) return NO(z), () => {
         OO(z);
       };
-    }, []), ot.jsx("canvas", {
+    }, []), lt.jsx("canvas", {
       ref: M,
       className: r
     });
   }), HO = ut.forwardRef(function(t, i) {
-    return ot.jsx(e2, {
-      children: ot.jsx(UO, {
+    return lt.jsx(e2, {
+      children: lt.jsx(UO, {
         ref: i,
         ...t
       })
@@ -30850,7 +30850,7 @@ No matching component was found for:
   });
   function _8(e) {
     const { children: t, ...i } = e, { app: a } = zT();
-    return (a == null ? void 0 : a.renderer) && ot.jsx("pixiViewportWrapper", {
+    return (a == null ? void 0 : a.renderer) && lt.jsx("pixiViewportWrapper", {
       position: {
         x: a.canvas.width / 2,
         y: a.canvas.height / 3
@@ -30868,7 +30868,7 @@ No matching component was found for:
   }
   function v8({ children: e, universe: t }) {
     const [i, a] = ut.useState(0), [r, c] = ut.useState(null), [h, p] = ut.useState(false);
-    return ot.jsx(DT.Provider, {
+    return lt.jsx(DT.Provider, {
       value: {
         universe: t,
         render: i,
@@ -30890,7 +30890,7 @@ No matching component was found for:
       O.stopPropagation(), i(D), _(true), e.set_is_paused(true);
     }, C = (D, O) => {
       if (!m) return;
-      const U = e.get_balls(), H = M.current.toLocal(O.global), j = D === 0 ? 0 : U[D - 1].pos.x, q = D === 0 ? 0 : U[D - 1].pos.y, P = H.x - j, lt = H.y - q, ct = Math.atan2(P, lt);
+      const U = e.get_balls(), H = M.current.toLocal(O.global), j = D === 0 ? 0 : U[D - 1].pos.x, q = D === 0 ? 0 : U[D - 1].pos.y, P = H.x - j, rt = H.y - q, ct = Math.atan2(P, rt);
       e.update_ball_theta(D, ct), c((ht) => ht + 1);
     }, N = () => {
       _(false), e.get_is_paused() || e.set_is_paused(false);
@@ -30898,14 +30898,14 @@ No matching component was found for:
       D.clear();
       const O = e.get_balls(), U = e.get_trails(), H = e.get_is_paused();
       if (H) for (let j = 0; j < O.length; j++) {
-        const q = j === 0 ? 0 : O[j - 1].pos.x, P = j === 0 ? 0 : O[j - 1].pos.y, lt = 40, ct = O[j].theta, ht = Math.PI / 2, ft = Math.PI / 2 - ct;
+        const q = j === 0 ? 0 : O[j - 1].pos.x, P = j === 0 ? 0 : O[j - 1].pos.y, rt = 40, ct = O[j].theta, ht = Math.PI / 2, ft = Math.PI / 2 - ct;
         D.moveTo(O[j].pos.x, O[j].pos.y), D.setStrokeStyle({
           width: 2,
           color: 4871528,
           alpha: 0.8,
           cap: "round",
           join: "round"
-        }), D.arc(q, P, lt, ft, ht, ct < 0), D.stroke();
+        }), D.arc(q, P, rt, ft, ht, ct < 0), D.stroke();
         const Ct = O[j].rod ? O[j].rod.length : 100, Ut = Math.abs(O[j].omega * Ct), Nt = ct + (O[j].omega > 0 ? Math.PI / 2 : -Math.PI / 2);
         if (Ut > 0.1) {
           const B = Math.sin(Nt) * Ut * 1, X = Math.cos(Nt) * Ut * 1;
@@ -30916,19 +30916,19 @@ No matching component was found for:
             cap: "round",
             join: "round"
           }), D.moveTo(O[j].pos.x, O[j].pos.y), D.lineTo(O[j].pos.x + B, O[j].pos.y + X), D.stroke();
-          const st = 15, rt = Math.PI / 6, gt = Math.atan2(X, B), Y = O[j].pos.x + B, tt = O[j].pos.y + X, pt = -8, _t = Y - Math.cos(gt) * pt, Tt = tt - Math.sin(gt) * pt;
+          const st = 15, ot = Math.PI / 6, gt = Math.atan2(X, B), Y = O[j].pos.x + B, tt = O[j].pos.y + X, pt = -8, _t = Y - Math.cos(gt) * pt, Tt = tt - Math.sin(gt) * pt;
           D.poly([
             {
               x: _t,
               y: Tt
             },
             {
-              x: _t - Math.cos(gt - rt) * st,
-              y: Tt - Math.sin(gt - rt) * st
+              x: _t - Math.cos(gt - ot) * st,
+              y: Tt - Math.sin(gt - ot) * st
             },
             {
-              x: _t - Math.cos(gt + rt) * st,
-              y: Tt - Math.sin(gt + rt) * st
+              x: _t - Math.cos(gt + ot) * st,
+              y: Tt - Math.sin(gt + ot) * st
             }
           ]), D.fill({
             color: 4871528,
@@ -30974,8 +30974,8 @@ No matching component was found for:
         const O = e.get_balls();
         O[t] && S((U) => U + O[t].omega * D.deltaTime * 0.1);
       }
-    }), ot.jsx(ot.Fragment, {
-      children: ot.jsx("pixiContainer", {
+    }), lt.jsx(lt.Fragment, {
+      children: lt.jsx("pixiContainer", {
         x: 0,
         y: 0,
         ref: M,
@@ -30991,9 +30991,9 @@ No matching component was found for:
             }
           }
           for (let H = 0; H < U.length; H++) {
-            const j = H === 0 ? 0 : U[H - 1].pos.x, q = H === 0 ? 0 : U[H - 1].pos.y, P = U[H].pos.x, lt = U[H].pos.y, ct = O.x - j, ht = O.y - q, ft = P - j, Ct = lt - q, Ut = ct * ft + ht * Ct, Nt = ft * ft + Ct * Ct, Ft = Nt !== 0 ? Ut / Nt : -1;
+            const j = H === 0 ? 0 : U[H - 1].pos.x, q = H === 0 ? 0 : U[H - 1].pos.y, P = U[H].pos.x, rt = U[H].pos.y, ct = O.x - j, ht = O.y - q, ft = P - j, Ct = rt - q, Ut = ct * ft + ht * Ct, Nt = ft * ft + Ct * Ct, Ft = Nt !== 0 ? Ut / Nt : -1;
             let B, X;
-            if (Ft < 0 ? (B = j, X = q) : Ft > 1 ? (B = P, X = lt) : (B = j + Ft * ft, X = q + Ft * Ct), Math.sqrt((O.x - B) ** 2 + (O.y - X) ** 2) < 10) {
+            if (Ft < 0 ? (B = j, X = q) : Ft > 1 ? (B = P, X = rt) : (B = j + Ft * ft, X = q + Ft * Ct), Math.sqrt((O.x - B) ** 2 + (O.y - X) ** 2) < 10) {
               i(H), e.get_is_paused() && a(true);
               return;
             }
@@ -31010,8 +31010,8 @@ No matching component was found for:
             let U = false, H = null;
             const j = M.current.toLocal(D.data.global);
             for (let q = 0; q < O.length; q++) {
-              const P = j.x - O[q].pos.x, lt = j.y - O[q].pos.y;
-              if (Math.sqrt(P * P + lt * lt) < O[q].radius + 10) {
+              const P = j.x - O[q].pos.x, rt = j.y - O[q].pos.y;
+              if (Math.sqrt(P * P + rt * rt) < O[q].radius + 10) {
                 U = true, H = q;
                 break;
               }
@@ -31021,7 +31021,7 @@ No matching component was found for:
         },
         onPointerUp: N,
         onPointerUpOutside: N,
-        children: ot.jsx("pixiGraphics", {
+        children: lt.jsx("pixiGraphics", {
           draw: z
         })
       })
@@ -31547,157 +31547,157 @@ No matching component was found for:
         j && (j.position.set(H.canvas.width / 2, H.canvas.height / 3), j.scale.set(1, 1), j.rotation = 0);
       }
     };
-    return ot.jsxs("div", {
+    return lt.jsxs("div", {
       className: "flex flex-col items-center gap-2",
       children: [
-        r && ot.jsxs("div", {
+        r && lt.jsxs("div", {
           className: "bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg pointer-events-auto text-center animate-pulse",
           children: [
-            ot.jsx("p", {
+            lt.jsx("p", {
               className: "font-semibold text-sm sm:text-base",
               children: "\u{1F3AF} Edit Mode Active"
             }),
-            ot.jsx("p", {
+            lt.jsx("p", {
               className: "text-xs sm:text-sm opacity-90",
-              children: "Click on a ball to edit its properties"
+              children: "Click/drag a ball to edit its properties"
             })
           ]
         }),
-        ot.jsx("div", {
+        lt.jsx("div", {
           className: "w-fit max-w-full py-2 px-2 sm:px-4 bg-white border pointer-events-auto border-gray-200 rounded-lg shadow-xl overflow-x-auto",
-          children: ot.jsxs("div", {
+          children: lt.jsxs("div", {
             className: "flex items-center justify-center divide-x divide-gray-300 flex-wrap sm:flex-nowrap gap-y-2",
             children: [
-              ot.jsxs("div", {
+              lt.jsxs("div", {
                 className: "flex items-center gap-1 sm:gap-2 px-2 sm:px-4",
                 children: [
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => p(om.Euler),
                     className: `p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 ${h === om.Euler ? "bg-blue-100" : "hover:bg-gray-100"}`,
                     title: "Euler Method",
-                    children: ot.jsx(w8, {
+                    children: lt.jsx(w8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => p(om.RK4),
                     className: `p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 ${h === om.RK4 ? "bg-blue-100" : "hover:bg-gray-100"}`,
                     title: "RK4 Method",
-                    children: ot.jsx(z8, {
+                    children: lt.jsx(z8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   })
                 ]
               }),
-              ot.jsxs("div", {
+              lt.jsxs("div", {
                 className: "flex items-center gap-1 sm:gap-2 px-2 sm:px-4",
                 children: [
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => {
                       e.toggle_mass_calculation(), _(e.get_mass_calculation()), t((H) => H + 1);
                     },
                     className: `p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 ${m ? "bg-blue-100" : "hover:bg-gray-100"}`,
                     title: m ? "Mass Calculation Enabled" : "Mass Calculation Disabled",
-                    children: ot.jsx(F8, {
+                    children: lt.jsx(F8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => {
                       e.toggle_show_trails(), S(e.get_show_trails()), t((H) => H + 1);
                     },
                     className: `p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 ${x ? "bg-blue-100" : "hover:bg-gray-100"}`,
                     title: x ? "Trails Visible" : "Trails Hidden",
-                    children: ot.jsx(I8, {
+                    children: lt.jsx(I8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   })
                 ]
               }),
-              ot.jsxs("div", {
+              lt.jsxs("div", {
                 className: "flex items-center gap-1 sm:gap-2 px-2 sm:px-4",
                 children: [
-                  ot.jsx("div", {
+                  lt.jsx("div", {
                     className: "w-8 sm:w-12 text-center text-xs sm:text-base",
-                    children: ot.jsxs("p", {
+                    children: lt.jsxs("p", {
                       children: [
                         C,
                         "x"
                       ]
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: z,
                     className: "p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 active:bg-blue-200 hover:bg-gray-100",
                     title: "Rewind",
-                    children: ot.jsx(K8, {
+                    children: lt.jsx(K8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => c(!r),
                     className: "p-1.5 sm:p-2 hover:bg-gray-100 rounded cursor-pointer transition-all duration-200",
                     title: r ? "Play" : "Pause",
-                    children: r ? ot.jsx(X8, {
+                    children: r ? lt.jsx(X8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
-                    }) : ot.jsx(G8, {
+                    }) : lt.jsx(G8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: D,
                     className: "p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 active:bg-blue-200 hover:bg-gray-100",
                     title: "Fast Forward",
-                    children: ot.jsx(D8, {
+                    children: lt.jsx(D8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: O,
                     className: "p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 active:bg-blue-200 hover:bg-gray-100",
                     title: "Reset Simulation",
-                    children: ot.jsx(k8, {
+                    children: lt.jsx(k8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   })
                 ]
               }),
-              ot.jsxs("div", {
+              lt.jsxs("div", {
                 className: "flex items-center gap-1 sm:gap-2 px-2 sm:px-4",
                 children: [
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => {
                       e.add_ball_simple(Math.PI * 2 * Math.random()), t((H) => H + 1);
                     },
                     className: "p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 active:bg-blue-200 hover:bg-gray-100",
                     title: "Add Ball",
-                    children: ot.jsx(P8, {
+                    children: lt.jsx(P8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => i(!a),
                     className: `p-1.5 sm:p-2 hover:bg-gray-100 rounded cursor-pointer transition-all duration-200 ${a ? "bg-blue-100" : ""}`,
                     title: a ? "Close Property Editor" : "Open Property Editor",
-                    children: ot.jsx(Y8, {
+                    children: lt.jsx(Y8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: () => {
                       e.remove_ball(), t((H) => H + 1);
                     },
                     className: "p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 active:bg-blue-200 hover:bg-gray-100",
                     title: "Remove Ball",
-                    children: ot.jsx(H8, {
+                    children: lt.jsx(H8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   }),
-                  ot.jsx("button", {
+                  lt.jsx("button", {
                     onClick: U,
                     className: "p-1.5 sm:p-2 rounded cursor-pointer transition-all duration-200 active:bg-blue-200 hover:bg-gray-100",
                     title: "Reset View",
-                    children: ot.jsx(B8, {
+                    children: lt.jsx(B8, {
                       className: "w-4 h-4 sm:w-5 sm:h-5"
                     })
                   })
@@ -31720,13 +31720,13 @@ No matching component was found for:
     }), [x, S] = ut.useState(false), [M, E] = ut.useState({
       x: 0,
       y: 0
-    }), C = ut.useRef(null), [N, z] = ut.useState("0.00"), [D, O] = ut.useState("0.000"), [U, H] = ut.useState("0.00"), [j, q] = ut.useState("0.0"), [P, lt] = ut.useState("0.0"), [ct, ht] = ut.useState(""), [ft, Ct] = ut.useState(""), [Ut, Nt] = ut.useState(""), [Ft, B] = ut.useState(""), [X, st] = ut.useState(""), [rt, gt] = ut.useState(null);
+    }), C = ut.useRef(null), [N, z] = ut.useState("0.00"), [D, O] = ut.useState("0.000"), [U, H] = ut.useState("0.00"), [j, q] = ut.useState("0.0"), [P, rt] = ut.useState("0.0"), [ct, ht] = ut.useState(""), [ft, Ct] = ut.useState(""), [Ut, Nt] = ut.useState(""), [Ft, B] = ut.useState(""), [X, st] = ut.useState(""), [ot, gt] = ut.useState(null);
     ut.useEffect(() => {
-      !rt && h && (z((h.theta * 180 / Math.PI).toFixed(2)), O((h.omega * 180 / Math.PI).toFixed(3)), H(h.mass.toFixed(2)), q(h.rod ? h.rod.length.toFixed(1) : "0"), lt(h.radius.toFixed(1)));
+      !ot && h && (z((h.theta * 180 / Math.PI).toFixed(2)), O((h.omega * 180 / Math.PI).toFixed(3)), H(h.mass.toFixed(2)), q(h.rod ? h.rod.length.toFixed(1) : "0"), rt(h.radius.toFixed(1)));
     }, [
       h,
       t,
-      rt
+      ot
     ]), ut.useEffect(() => {
       const St = (wn) => {
         x && _({
@@ -31792,11 +31792,11 @@ No matching component was found for:
       const Et = parseFloat(St);
       isNaN(Et) ? B("Please enter a valid number") : Et <= 0 ? B("Rod length must be greater than 0") : tt("rod_length", Et);
     }, kt = (St) => {
-      if (gt("radius"), lt(St), st(""), St === "" || St === "-") return;
+      if (gt("radius"), rt(St), st(""), St === "" || St === "-") return;
       const Et = parseFloat(St);
       isNaN(Et) ? st("Please enter a valid number") : Et <= 0 ? st("Radius must be greater than 0") : tt("radius", Et);
     };
-    return !i || !h ? null : ot.jsxs("div", {
+    return !i || !h ? null : lt.jsxs("div", {
       ref: C,
       className: "fixed bg-white border border-gray-200 rounded-lg shadow-2xl pointer-events-auto max-h-[90vh] overflow-y-auto",
       style: {
@@ -31809,20 +31809,20 @@ No matching component was found for:
         zIndex: 1e3
       },
       children: [
-        ot.jsxs("div", {
+        lt.jsxs("div", {
           className: "flex sticky top-0 items-center justify-between p-2 sm:p-3 border-b border-gray-200 bg-gray-50 rounded-t-lg",
           children: [
-            ot.jsxs("div", {
+            lt.jsxs("div", {
               className: "flex items-center gap-2 cursor-move flex-1",
               onMouseDown: Y,
               children: [
-                ot.jsx(vb, {
+                lt.jsx(vb, {
                   className: "w-4 h-4 sm:w-5 sm:h-5 text-gray-400 hidden sm:block"
                 }),
-                ot.jsx(vb, {
+                lt.jsx(vb, {
                   className: "w-4 h-4 sm:w-5 sm:h-5 text-gray-400 -ml-4 hidden sm:block"
                 }),
-                ot.jsxs("h2", {
+                lt.jsxs("h2", {
                   className: "text-base sm:text-lg font-semibold text-gray-800 sm:ml-2",
                   children: [
                     "Edit Ball ",
@@ -31832,33 +31832,33 @@ No matching component was found for:
                 })
               ]
             }),
-            ot.jsx("button", {
+            lt.jsx("button", {
               onClick: () => a(false),
               className: "p-1 hover:bg-gray-200 rounded transition-all duration-200",
-              children: ot.jsx(tN, {
+              children: lt.jsx(tN, {
                 className: "w-5 h-5 text-gray-600"
               })
             })
           ]
         }),
-        ot.jsxs("div", {
+        lt.jsxs("div", {
           className: "p-3 sm:p-4 space-y-3 sm:space-y-4",
           children: [
-            ot.jsxs("div", {
+            lt.jsxs("div", {
               className: "space-y-1",
               children: [
-                ot.jsxs("label", {
+                lt.jsxs("label", {
                   className: "text-sm font-medium text-gray-700 flex items-center gap-2",
                   children: [
                     "Angle ",
-                    ot.jsx("span", {
+                    lt.jsx("span", {
                       className: "text-lg",
                       children: "\u03B8"
                     }),
                     ":"
                   ]
                 }),
-                ot.jsx("input", {
+                lt.jsx("input", {
                   type: "text",
                   value: N,
                   onChange: (St) => pt(St.target.value),
@@ -31866,31 +31866,31 @@ No matching component was found for:
                   className: `w-full px-3 py-2.5 sm:py-2 text-base border rounded-md focus:outline-none focus:ring-2 ${ct ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"}`,
                   placeholder: "Angle in degrees"
                 }),
-                ct && ot.jsx("span", {
+                ct && lt.jsx("span", {
                   className: "text-xs text-red-600",
                   children: ct
                 }),
-                !ct && ot.jsx("span", {
+                !ct && lt.jsx("span", {
                   className: "text-xs text-gray-500",
                   children: "degrees"
                 })
               ]
             }),
-            ot.jsxs("div", {
+            lt.jsxs("div", {
               className: "space-y-1",
               children: [
-                ot.jsxs("label", {
+                lt.jsxs("label", {
                   className: "text-sm font-medium text-gray-700 flex items-center gap-2",
                   children: [
                     "Angular Velocity ",
-                    ot.jsx("span", {
+                    lt.jsx("span", {
                       className: "text-lg",
                       children: "\u03C9"
                     }),
                     ":"
                   ]
                 }),
-                ot.jsx("input", {
+                lt.jsx("input", {
                   type: "text",
                   value: D,
                   onChange: (St) => _t(St.target.value),
@@ -31898,35 +31898,35 @@ No matching component was found for:
                   className: `w-full px-3 py-2.5 sm:py-2 text-base border rounded-md focus:outline-none focus:ring-2 ${ft ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"}`,
                   placeholder: "Angular velocity"
                 }),
-                ft && ot.jsx("span", {
+                ft && lt.jsx("span", {
                   className: "text-xs text-red-600",
                   children: ft
                 }),
-                !ft && ot.jsx("span", {
+                !ft && lt.jsx("span", {
                   className: "text-xs text-gray-500",
                   children: "deg/s"
                 })
               ]
             }),
-            ot.jsxs("div", {
+            lt.jsxs("div", {
               className: "space-y-1",
               children: [
-                ot.jsxs("label", {
+                lt.jsxs("label", {
                   className: "text-sm font-medium text-gray-700 flex items-center gap-2 flex-wrap",
                   children: [
                     "Mass ",
-                    ot.jsx("span", {
+                    lt.jsx("span", {
                       className: "text-lg",
                       children: "m"
                     }),
                     ":",
-                    !p && ot.jsx("span", {
+                    !p && lt.jsx("span", {
                       className: "text-xs text-gray-400 font-normal",
                       children: "(disabled - enable in the settings bar)"
                     })
                   ]
                 }),
-                ot.jsx("input", {
+                lt.jsx("input", {
                   type: "text",
                   value: U,
                   onChange: (St) => Tt(St.target.value),
@@ -31935,31 +31935,31 @@ No matching component was found for:
                   className: `w-full px-3 py-2.5 sm:py-2 text-base border rounded-md focus:outline-none focus:ring-2 ${Ut ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"} ${p ? "" : "bg-gray-100 text-gray-400 cursor-not-allowed"}`,
                   placeholder: "Mass"
                 }),
-                Ut && ot.jsx("span", {
+                Ut && lt.jsx("span", {
                   className: "text-xs text-red-600",
                   children: Ut
                 }),
-                !Ut && ot.jsx("span", {
+                !Ut && lt.jsx("span", {
                   className: "text-xs text-gray-500",
                   children: "kg"
                 })
               ]
             }),
-            h.rod && ot.jsxs("div", {
+            h.rod && lt.jsxs("div", {
               className: "space-y-1",
               children: [
-                ot.jsxs("label", {
+                lt.jsxs("label", {
                   className: "text-sm font-medium text-gray-700 flex items-center gap-2",
                   children: [
                     "Rod Length ",
-                    ot.jsx("span", {
+                    lt.jsx("span", {
                       className: "text-lg",
                       children: "\u2113"
                     }),
                     ":"
                   ]
                 }),
-                ot.jsx("input", {
+                lt.jsx("input", {
                   type: "text",
                   value: j,
                   onChange: (St) => jt(St.target.value),
@@ -31967,31 +31967,31 @@ No matching component was found for:
                   className: `w-full px-3 py-2.5 sm:py-2 text-base border rounded-md focus:outline-none focus:ring-2 ${Ft ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"}`,
                   placeholder: "Rod length"
                 }),
-                Ft && ot.jsx("span", {
+                Ft && lt.jsx("span", {
                   className: "text-xs text-red-600",
                   children: Ft
                 }),
-                !Ft && ot.jsx("span", {
+                !Ft && lt.jsx("span", {
                   className: "text-xs text-gray-500",
                   children: "pixels"
                 })
               ]
             }),
-            ot.jsxs("div", {
+            lt.jsxs("div", {
               className: "space-y-1",
               children: [
-                ot.jsxs("label", {
+                lt.jsxs("label", {
                   className: "text-sm font-medium text-gray-700 flex items-center gap-2",
                   children: [
                     "Radius ",
-                    ot.jsx("span", {
+                    lt.jsx("span", {
                       className: "text-lg",
                       children: "r"
                     }),
                     ":"
                   ]
                 }),
-                ot.jsx("input", {
+                lt.jsx("input", {
                   type: "text",
                   value: P,
                   onChange: (St) => kt(St.target.value),
@@ -31999,34 +31999,34 @@ No matching component was found for:
                   className: `w-full px-3 py-2.5 sm:py-2 text-base border rounded-md focus:outline-none focus:ring-2 ${X ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"}`,
                   placeholder: "Radius"
                 }),
-                X && ot.jsx("span", {
+                X && lt.jsx("span", {
                   className: "text-xs text-red-600",
                   children: X
                 }),
-                !X && ot.jsx("span", {
+                !X && lt.jsx("span", {
                   className: "text-xs text-gray-500",
                   children: "pixels"
                 })
               ]
             }),
-            ot.jsxs("div", {
+            lt.jsxs("div", {
               className: "space-y-1 bg-gray-50 p-3 rounded-md",
               children: [
-                ot.jsx("label", {
+                lt.jsx("label", {
                   className: "text-sm font-medium text-gray-700 flex items-center gap-2",
                   children: "Position:"
                 }),
-                ot.jsxs("div", {
+                lt.jsxs("div", {
                   className: "text-sm text-gray-600",
                   children: [
-                    ot.jsxs("div", {
+                    lt.jsxs("div", {
                       children: [
                         "x: ",
                         h.pos.x.toFixed(2),
                         " px"
                       ]
                     }),
-                    ot.jsxs("div", {
+                    lt.jsxs("div", {
                       children: [
                         "y: ",
                         h.pos.y.toFixed(2),
@@ -32050,7 +32050,7 @@ No matching component was found for:
   console.log("Universe initialized:", NT.get_balls());
   const iN = ut.memo(function({ universe: t }) {
     const [i, a] = GO();
-    return ot.jsx(HO, {
+    return lt.jsx(HO, {
       background: "#ffffff00",
       width: i,
       height: a,
@@ -32059,8 +32059,8 @@ No matching component was found for:
       onInit: (r) => {
         window.pixiApp = r;
       },
-      children: ot.jsx(_8, {
-        children: ot.jsx(x8, {
+      children: lt.jsx(_8, {
+        children: lt.jsx(x8, {
           universe: t
         })
       })
@@ -32068,34 +32068,50 @@ No matching component was found for:
   });
   function sN() {
     const { universe: e } = ty();
-    return ot.jsxs(c4, {
+    return lt.jsxs(c4, {
       children: [
-        ot.jsx(iN, {
+        lt.jsx(iN, {
           universe: e
         }),
-        ot.jsx("div", {
+        lt.jsxs("div", {
           className: "absolute inset-0 p-2 sm:p-4 pointer-events-none flex justify-center items-start",
-          children: ot.jsx("p", {
-            className: "text-neutral-700 font-bold text-4xl md:text-5xl  text-center",
-            children: "Pendulum Simulation"
-          })
+          children: [
+            lt.jsx("p", {
+              className: "text-neutral-700 font-bold text-4xl md:text-5xl  text-center",
+              children: "Pendulumania"
+            }),
+            lt.jsxs("p", {
+              className: "text-neutral-700 font-bold text-xl md:text-2xl  text-center",
+              children: [
+                "Made by",
+                " ",
+                lt.jsx("a", {
+                  className: "underline",
+                  href: "https://github.com/NotARoomba",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  children: "NotARoomba"
+                })
+              ]
+            })
+          ]
         }),
-        ot.jsx("div", {
+        lt.jsx("div", {
           className: "absolute bottom-0 w-screen p-2 sm:p-4 pointer-events-none flex justify-center items-start",
-          children: ot.jsx(eN, {})
+          children: lt.jsx(eN, {})
         }),
-        ot.jsx(nN, {})
+        lt.jsx(nN, {})
       ]
     });
   }
   function aN() {
-    return ot.jsx(v8, {
+    return lt.jsx(v8, {
       universe: NT,
-      children: ot.jsx(sN, {})
+      children: lt.jsx(sN, {})
     });
   }
-  NM.createRoot(document.getElementById("root")).render(ot.jsx(ut.StrictMode, {
-    children: ot.jsx(aN, {})
+  NM.createRoot(document.getElementById("root")).render(lt.jsx(ut.StrictMode, {
+    children: lt.jsx(aN, {})
   }));
 })();
 export {

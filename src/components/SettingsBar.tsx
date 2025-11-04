@@ -100,7 +100,7 @@ export default function SettingsBar() {
             🎯 Edit Mode Active
           </p>
           <p className="text-xs sm:text-sm opacity-90">
-            Click on a ball to edit its properties
+            Click/drag a ball to edit its properties
           </p>
         </div>
       )}

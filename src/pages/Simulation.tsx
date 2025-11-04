@@ -55,7 +55,18 @@ function SimulationContent() {
       <PixiCanvas universe={universe} />
       <div className="absolute inset-0 p-2 sm:p-4 pointer-events-none flex justify-center items-start">
         <p className="text-neutral-700 font-bold text-4xl md:text-5xl  text-center">
-          Pendulum Simulation
+          Pendulumania
+        </p>
+        <p className="text-neutral-700 font-bold text-xl md:text-2xl  text-center">
+          Made by{" "}
+          <a
+            className="underline"
+            href="https://github.com/NotARoomba"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            NotARoomba
+          </a>
         </p>
       </div>
       <div className="absolute bottom-0 w-screen p-2 sm:p-4 pointer-events-none flex justify-center items-start">
