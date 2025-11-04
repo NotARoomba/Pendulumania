@@ -7,7 +7,7 @@
 </h1>
 
 <h4 align="center">
-	Interactive double pendulum simulation with a Rust physics engine compiled to WebAssembly
+	Interactive n-pendulum simulation with a Rust physics engine compiled to WebAssembly
 </h4>
 
 <div align="center">
@@ -32,6 +32,8 @@ A small, interactive double pendulum demo that separates a high-performance phys
 - High-performance physics core implemented in Rust and compiled to WebAssembly for accurate, real-time simulation
 - Smooth, interactive Web UI built with React, PixiJS, and TypeScript
 - Prebuilt WASM `physics/pkg` so you can run the demo without a local Rust toolchain
+- Adjustable parameters (masses, lengths, gravity, initial angles) and simulation controls (start/stop/reset)
+- Different implementations (RK4, Hamltonian, etc...)
 
 ## Preview
 
@@ -39,9 +41,10 @@ Open https://pendulum.notaroomba.dev in a browser.
 
 ## TODO
 
-- Adjustable parameters (masses, lengths, gravity, initial angles) and simulation controls (start/stop/reset)
 - Presets and exportable snapshots for sharing interesting trajectories
-- Different implementations (RK4, Hamltonian, etc...)
+- Plots and graphs for the simulation
+- Game-ify it?
+
 
 ## Credits
 
