@@ -53,14 +53,14 @@ function SimulationContent() {
   return (
     <Transitions>
       <PixiCanvas universe={universe} />
-      <div className="absolute inset-0 p-2 sm:p-4 pointer-events-none flex justify-center items-start">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 p-2 sm:p-4 pointer-events-none flex flex-col justify-center items-start">
         <p className="text-neutral-700 font-bold text-4xl md:text-5xl  text-center">
           Pendulumania
         </p>
-        <p className="text-neutral-700 font-bold text-xl md:text-2xl  text-center">
+        <p className="text-neutral-700 text-md md:text-lg  text-center mx-auto">
           Made by{" "}
           <a
-            className="underline"
+            className="underline pointer-events-auto"
             href="https://github.com/NotARoomba"
             target="_blank"
             rel="noopener noreferrer"
