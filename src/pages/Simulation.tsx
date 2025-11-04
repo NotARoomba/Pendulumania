@@ -6,6 +6,8 @@ import { Viewport } from "../utils/Viewport";
 import SandBox from "../utils/SandBox";
 import { Container, Text } from "pixi.js";
 import SettingsBar from "../components/SettingsBar";
+import BobEditor from "../components/BobEditor";
+import { useState } from "react";
 
 extend({ Container, Text });
 
@@ -15,6 +17,9 @@ console.log("Universe initialized:", universe.get_bobs());
 
 export default function Simulation() {
   const [width, height] = useWindowDimension();
+  const [editingBobIndex, setEditingBobIndex] = useState<number | null>(null);
+  const [editingRodIndex, setEditingRodIndex] = useState<number | null>(null);
+  const [renderTrigger, setRenderTrigger] = useState(0);
 
   return (
     <Transitions>
@@ -26,7 +31,13 @@ export default function Simulation() {
         antialias
       >
         <Viewport>
-          <SandBox universe={universe} />
+          <SandBox
+            universe={universe}
+            editingBobIndex={editingBobIndex}
+            setEditingBobIndex={setEditingBobIndex}
+            editingRodIndex={editingRodIndex}
+            setEditingRodIndex={setEditingRodIndex}
+          />
         </Viewport>
       </Application>
       <div className="absolute inset-0 p-4 pointer-events-none flex justify-center items-start">
@@ -37,6 +48,14 @@ export default function Simulation() {
       <div className="absolute bottom-0 w-screen p-4 pointer-events-none flex justify-center items-start ">
         <SettingsBar universe={universe} />
       </div>
+      <BobEditor
+        universe={universe}
+        editingBobIndex={editingBobIndex}
+        setEditingBobIndex={setEditingBobIndex}
+        editingRodIndex={editingRodIndex}
+        setEditingRodIndex={setEditingRodIndex}
+        onUpdate={() => setRenderTrigger(renderTrigger + 1)}
+      />
     </Transitions>
   );
 }
