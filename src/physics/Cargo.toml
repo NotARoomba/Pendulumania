@@ -1,6 +1,6 @@
 [package]
 name = "physics-engine"
-description = "A rust backend for my Double Pendulum Simulation!"
+description = "A rust backend for my Pendulumania Simulation!"
 repository = "https://github.com/NotARoomba/DoublePendulum"
 version = "0.1.0"
 edition = "2021"

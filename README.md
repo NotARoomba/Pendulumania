@@ -1,8 +1,8 @@
 <h1 align="center">
 	<br>
-	<a href="https://pendulum.notaroomba.dev"><img src="public/icon.png" alt="Double Pendulum" width="200"></a>
+	<a href="https://pendulum.notaroomba.dev"><img src="public/icon.png" alt="Pendulumania" width="200"></a>
 	<br>
-	Double Pendulum
+	Pendulumania
 	<br>
 </h1>
 
