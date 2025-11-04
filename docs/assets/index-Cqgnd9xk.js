@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/browserAll-BnGc-CyU.js","assets/webworkerAll-BXVCHaWi.js","assets/colorToUniform-BXaCBwVl.js","assets/WebGPURenderer-Y4BIgxkO.js","assets/SharedSystems-DOrXnPi6.js","assets/WebGLRenderer-Ddt4Grg9.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/browserAll-Bu4rMedw.js","assets/webworkerAll-BtEuHBcT.js","assets/colorToUniform-BXaCBwVl.js","assets/WebGPURenderer-CQK7lloX.js","assets/SharedSystems-Cck2biwJ.js","assets/WebGLRenderer-Bos0Ktvj.js"])))=>i.map(i=>d[i]);
 let jm, F2, Wi, Ui, ds, Se, cu, Cd, va, v2, cx, pd, Nz, ae, Pz, wd, ce, ln, T0, Xz, qf, x0, He, o6, fx, _g, dx, cz, ol, En, oz, m2, J2, _e, an, d6, G6, D6, iR, aR, cR, fR, dR, tT, Oc, Ym, tb, bd, m6, Dc, cT, Rx, Cx, Sd, D4, sb, dT, C6, vd, Om, Ji, zx, A6, b_, Z2, E2, xa, Y2, B0, nR, sR, oR, hR, Q4, Fm, we, R4, S_, Bi, mR, Xs, f2;
 let __tla = (async () => {
   var _a2, _b2;
@@ -8835,7 +8835,7 @@ Error generating stack: ` + f.message + `
     return e(), Yy.exports = DM(), Yy.exports;
   }
   var NM = OM();
-  const BM = "/assets/physics_engine_bg-PZeaHFtM.wasm", UM = async (e = {}, t) => {
+  const BM = "/assets/physics_engine_bg-C9iJf9_S.wasm", UM = async (e = {}, t) => {
     let i;
     if (t.startsWith("data:")) {
       const a = t.replace(/^data:.*?base64,/, "");
@@ -9356,8 +9356,8 @@ ${e.stack}` : a;
       __wbg___wbindgen_throw_b855445ff6a94295: QM,
       __wbg___wbindgen_debug_string_df47ffb5e35e6763: PM,
       __wbindgen_init_externref_table: tA,
-      __wbindgen_cast_d6cd19b81560fd6e: $M,
-      __wbindgen_cast_2241b6af4c4b2941: IM
+      __wbindgen_cast_2241b6af4c4b2941: IM,
+      __wbindgen_cast_d6cd19b81560fd6e: $M
     }
   }, BM), eA = vt.memory, nA = vt.__wbg_ball_free, iA = vt.__wbg_get_ball_color, sA = vt.__wbg_get_ball_mass, aA = vt.__wbg_get_ball_omega, lA = vt.__wbg_get_ball_pos, rA = vt.__wbg_get_ball_radius, oA = vt.__wbg_get_ball_rod, uA = vt.__wbg_get_ball_theta, cA = vt.__wbg_get_rod_color, hA = vt.__wbg_get_rod_length, fA = vt.__wbg_get_rod_mass, dA = vt.__wbg_rod_free, pA = vt.__wbg_set_ball_color, mA = vt.__wbg_set_ball_mass, yA = vt.__wbg_set_ball_omega, gA = vt.__wbg_set_ball_pos, _A = vt.__wbg_set_ball_radius, vA = vt.__wbg_set_ball_rod, xA = vt.__wbg_set_ball_theta, bA = vt.__wbg_set_rod_color, SA = vt.__wbg_set_rod_length, TA = vt.__wbg_set_rod_mass, MA = vt.__wbg_trail_free, AA = vt.__wbg_universe_free, EA = vt.__wbg_vec2_free, wA = vt.ball_add_trail_point, CA = vt.ball_get_data, zA = vt.ball_get_trail, RA = vt.ball_new, DA = vt.rod_get_data, OA = vt.rod_new, NA = vt.rod_update_length, BA = vt.universe_add_ball, UA = vt.universe_add_ball_simple, HA = vt.universe_get_ball, VA = vt.universe_get_ball_count, GA = vt.universe_get_balls, jA = vt.universe_get_gravity, YA = vt.universe_get_implementation, LA = vt.universe_get_is_paused, XA = vt.universe_get_mass_calculation, qA = vt.universe_get_show_trails, PA = vt.universe_get_speed, QA = vt.universe_get_trails, KA = vt.universe_new, ZA = vt.universe_random_color, kA = vt.universe_remove_ball, WA = vt.universe_reset, FA = vt.universe_set_implementation, JA = vt.universe_set_is_paused, IA = vt.universe_set_mass_calculation, $A = vt.universe_set_show_trails, tE = vt.universe_set_speed, eE = vt.universe_time_step, nE = vt.universe_toggle_mass_calculation, iE = vt.universe_toggle_show_trails, sE = vt.universe_update_ball_color, aE = vt.universe_update_ball_length, lE = vt.universe_update_ball_mass, rE = vt.universe_update_ball_omega, oE = vt.universe_update_ball_radius, uE = vt.universe_update_ball_theta, cE = vt.vec2_distance_from, hE = vt.vec2_divide, fE = vt.vec2_new, dE = vt.__wbg_set_trail_color, pE = vt.__wbg_set_vec2_x, mE = vt.__wbg_set_vec2_y, yE = vt.universe_set_gravity, gE = vt.__wbg_get_trail_pos, _E = vt.__wbg_get_trail_color, vE = vt.__wbg_get_vec2_x, xE = vt.__wbg_get_vec2_y, bE = vt.__wbg_set_trail_pos, SE = vt.__wbindgen_malloc, TE = vt.__wbindgen_realloc, ME = vt.__wbindgen_exn_store, AE = vt.__externref_table_alloc, EE = vt.__wbindgen_externrefs, wE = vt.__externref_drop_slice, CE = vt.__wbindgen_free, bb = vt.__wbindgen_start, zE = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -14248,7 +14248,7 @@ ${e.stack}` : a;
     },
     test: () => true,
     load: async () => {
-      await Gm(() => import("./browserAll-BnGc-CyU.js").then(async (m) => {
+      await Gm(() => import("./browserAll-Bu4rMedw.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([0,1,2]));
@@ -14262,7 +14262,7 @@ ${e.stack}` : a;
     },
     test: () => typeof self < "u" && self.WorkerGlobalScope !== void 0,
     load: async () => {
-      await Gm(() => import("./webworkerAll-BXVCHaWi.js").then(async (m) => {
+      await Gm(() => import("./webworkerAll-BtEuHBcT.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([1,2]));
@@ -19281,7 +19281,7 @@ ${e}`;
       const h = t[c];
       if (h === "webgpu" && await h6()) {
         const { WebGPURenderer: p } = await Gm(async () => {
-          const { WebGPURenderer: m } = await import("./WebGPURenderer-Y4BIgxkO.js").then(async (m7) => {
+          const { WebGPURenderer: m } = await import("./WebGPURenderer-CQK7lloX.js").then(async (m7) => {
             await m7.__tla;
             return m7;
           });
@@ -19296,7 +19296,7 @@ ${e}`;
         break;
       } else if (h === "webgl" && c6(e.failIfMajorPerformanceCaveat ?? F2.defaultOptions.failIfMajorPerformanceCaveat)) {
         const { WebGLRenderer: p } = await Gm(async () => {
-          const { WebGLRenderer: m } = await import("./WebGLRenderer-Ddt4Grg9.js").then(async (m7) => {
+          const { WebGLRenderer: m } = await import("./WebGLRenderer-Bos0Ktvj.js").then(async (m7) => {
             await m7.__tla;
             return m7;
           });
@@ -31676,7 +31676,10 @@ No matching component was found for:
                     })
                   }),
                   lt.jsx("button", {
-                    onClick: () => i(!a),
+                    onClick: () => {
+                      const H = !a;
+                      i(H), H && c(true);
+                    },
                     className: `p-1.5 sm:p-2 hover:bg-gray-100 rounded cursor-pointer transition-all duration-200 ${a ? "bg-blue-100" : ""}`,
                     title: a ? "Close Property Editor" : "Open Property Editor",
                     children: lt.jsx(Y8, {

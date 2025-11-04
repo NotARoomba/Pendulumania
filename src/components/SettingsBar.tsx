@@ -227,7 +227,13 @@ export default function SettingsBar() {
               <Plus className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
             <button
-              onClick={() => setIsPropertyEditorOpen(!isPropertyEditorOpen)}
+              onClick={() => {
+                const willOpen = !isPropertyEditorOpen;
+                setIsPropertyEditorOpen(willOpen);
+                if (willOpen) {
+                  setIsPaused(true);
+                }
+              }}
               className={`p-1.5 sm:p-2 hover:bg-gray-100 rounded cursor-pointer transition-all duration-200 ${
                 isPropertyEditorOpen ? "bg-blue-100" : ""
               }`}
