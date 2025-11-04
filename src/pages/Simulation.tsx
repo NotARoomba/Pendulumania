@@ -3,40 +3,75 @@ import Transitions from "../utils/Transitions";
 import { Application, extend } from "@pixi/react";
 import { useWindowDimension } from "../utils/useWindowDimension";
 import { Viewport } from "../utils/Viewport";
-import SandBox from "../utils/SandBox";
+import SandBox from "../components/SandBox";
 import { Container, Text } from "pixi.js";
 import SettingsBar from "../components/SettingsBar";
+import PropertyEditor from "../components/PropertyEditor";
+import { memo } from "react";
+import {
+  SimulationProvider,
+  useSimulation,
+} from "../contexts/SimulationContext";
 
 extend({ Container, Text });
 
-const universe: Universe = new Universe();
+// Create universe singleton
+const universeInstance: Universe = new Universe();
 
-console.log("Universe initialized:", universe.get_bobs());
+console.log("Universe initialized:", universeInstance.get_bobs());
 
-export default function Simulation() {
+// Memoize the canvas to prevent re-renders from context changes
+const PixiCanvas = memo(function PixiCanvas({
+  universe,
+}: {
+  universe: Universe;
+}) {
   const [width, height] = useWindowDimension();
 
   return (
+    <Application
+      background={"#ffffff00"}
+      width={width}
+      height={height}
+      className="overflow-hidden"
+      antialias
+      onInit={(app) => {
+        // Store app reference globally for viewport access
+        (window as any).pixiApp = app;
+      }}
+    >
+      <Viewport>
+        <SandBox universe={universe} />
+      </Viewport>
+    </Application>
+  );
+});
+
+function SimulationContent() {
+  const { universe } = useSimulation();
+
+  return (
     <Transitions>
-      <Application
-        background={"#ffffff00"}
-        width={width}
-        height={height}
-        className="overflow-hidden"
-        antialias
-      >
-        <Viewport>
-          <SandBox universe={universe} />
-        </Viewport>
-      </Application>
+      <PixiCanvas universe={universe} />
       <div className="absolute inset-0 p-4 pointer-events-none flex justify-center items-start">
         <p className="text-neutral-700 font-bold text-5xl">
           Pendulum Simulation
         </p>
       </div>
       <div className="absolute bottom-0 w-screen p-4 pointer-events-none flex justify-center items-start ">
-        <SettingsBar universe={universe} />
+        <SettingsBar />
       </div>
+
+      {/* Property Editor */}
+      <PropertyEditor />
     </Transitions>
+  );
+}
+
+export default function Simulation() {
+  return (
+    <SimulationProvider universe={universeInstance}>
+      <SimulationContent />
+    </SimulationProvider>
   );
 }

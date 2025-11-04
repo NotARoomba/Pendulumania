@@ -168,10 +168,11 @@ pub enum Implementation {
 pub struct Universe {
     bobs: Vec<Bob>,
     gravity: f64,
+    mass_calculation: bool,
+    show_trails: bool,
     is_paused: bool,
     implementation: Implementation,
     speed: f64,
-    step: f64,
     max_bobs: usize,
 }
 #[wasm_bindgen]
@@ -185,14 +186,15 @@ impl Universe {
         // self.y_1 = self.origin_y + self.length_rod_1 * math.cos(self.theta_1)
         // self.x_2 = self.x_1 + self.length_rod_2 * math.sin(self.theta_2)
         // self.y_2 = self.y_1 + self.length_rod_2 * math.cos(self.theta_2)
-        let bob1 = Bob::new(100.0, 0.0, 0.0, PI / 2.0, 100.0, 10.0, 0x0f0f0f, 10, 100.0, 0xff0000);
-        let bob2 = Bob::new(200.0, 0.0, 0.0, PI / 2.0, 100.0, 10.0, 0x0f0f0f, 10, 100.0, 0x0000ff);
+        let bob1 = Bob::new(100.0, 0.0, 0.0, PI / 2.0, 100.0, 10.0, 0x0f0f0f, 10, 10.0, 0xff0000);
+        let bob2 = Bob::new(200.0, 0.0, 0.0, PI / 2.0, 100.0, 10.0, 0x0f0f0f, 10, 10.0, 0x0000ff);
         Universe {
             bobs: vec![bob1, bob2],
             gravity: 9.8,
             implementation: Implementation::Euler,
             speed: 1.0 / 20.0,
-            step: 0.1,
+            mass_calculation: false,
+            show_trails: true,
             max_bobs: 100,
             is_paused: false,
         }
@@ -206,7 +208,7 @@ impl Universe {
             // cutoff for Euler method, remove extras
             self.bobs.truncate(self.max_bobs);
         }
-        let new_dt = dt * self.speed * 0.25;
+        let new_dt = dt * self.speed * (if self.mass_calculation { 2.0 } else { 0.25 });
         if self.implementation == Implementation::Euler {
             let thetas: DVector<f64> = DVector::from_iterator(
                 self.bobs.len(),
@@ -285,8 +287,10 @@ impl Universe {
         } else if self.implementation == Implementation::Hamiltonian {
             // Placeholder for Hamiltonian method
         }
-        for bob in &mut self.bobs {
-            bob.add_trail_point(bob.pos, bob.color, 250);
+        if self.show_trails {
+            for bob in &mut self.bobs {
+                bob.add_trail_point(bob.pos, bob.color, 250);
+            }
         }
         return 0;
     }
@@ -297,35 +301,86 @@ impl Universe {
     ) -> (DVector<f64>, DVector<f64>) {
         let n = self.bobs.len();
 
-        // Build the mass matrix M (corresponds to A() in JS)
-        let mut m: DMatrix<f64> = DMatrix::from_element(n, n, 0.0);
-        for i in 0..n {
-            for j in 0..n {
-                m[(i, j)] =
-                    ((n as f64) - f64::max(i as f64, j as f64)) * f64::cos(thetas[i] - thetas[j]);
+        if self.mass_calculation {
+            // Extract masses and lengths
+            let masses: Vec<f64> = self.bobs
+                .iter()
+                .map(|bob| bob.mass)
+                .collect();
+            let lengths: Vec<f64> = self.bobs
+                .iter()
+                .map(|bob| bob.rod.length)
+                .collect();
+
+            // Build the mass matrix M
+            let mut m: DMatrix<f64> = DMatrix::from_element(n, n, 0.0);
+            for i in 0..n {
+                for j in 0..n {
+                    // Sum of masses from max(i,j) to n-1
+                    let mass_sum: f64 = (usize::max(i, j)..n).map(|k| masses[k]).sum();
+
+                    m[(i, j)] =
+                        mass_sum * lengths[i] * lengths[j] * f64::cos(thetas[i] - thetas[j]);
+                }
             }
-        }
 
-        // Build the force vector (corresponds to b() in JS)
-        let mut v = DVector::from_element(n, 0.0);
-        for i in 0..n {
-            let mut sum = 0.0;
-            for j in 0..n {
-                sum -=
-                    ((n as f64) - f64::max(i as f64, j as f64)) *
-                    f64::sin(thetas[i] - thetas[j]) *
-                    f64::powi(theta_dots[j], 2);
+            let mut v = DVector::from_element(n, 0.0);
+            for i in 0..n {
+                let mut sum = 0.0;
+
+                for j in 0..n {
+                    let mass_sum: f64 = (usize::max(i, j)..n).map(|k| masses[k]).sum();
+
+                    sum -=
+                        mass_sum *
+                        lengths[i] *
+                        lengths[j] *
+                        f64::sin(thetas[i] - thetas[j]) *
+                        f64::powi(theta_dots[j], 2);
+                }
+
+                // Gravitational term
+                let mass_sum_i: f64 = (i..n).map(|k| masses[k]).sum();
+                sum -= self.gravity * mass_sum_i * lengths[i] * f64::sin(thetas[i]);
+
+                v[i] = sum;
             }
-            sum -= self.gravity * ((n as f64) - (i as f64)) * f64::sin(thetas[i]);
-            v[i] = sum;
+
+            let lu = LU::new(m);
+            let theta_ddots = lu.solve(&v).unwrap_or_else(|| DVector::from_element(n, 0.0));
+
+            (theta_dots.clone(), theta_ddots)
+        } else {
+            // Simplified calculation without masses (assumes equal unit masses)
+            let mut m: DMatrix<f64> = DMatrix::from_element(n, n, 0.0);
+            for i in 0..n {
+                for j in 0..n {
+                    m[(i, j)] =
+                        ((n as f64) - f64::max(i as f64, j as f64)) *
+                        f64::cos(thetas[i] - thetas[j]);
+                }
+            }
+
+            // Build the force vector
+            let mut v = DVector::from_element(n, 0.0);
+            for i in 0..n {
+                let mut sum = 0.0;
+                for j in 0..n {
+                    sum -=
+                        ((n as f64) - f64::max(i as f64, j as f64)) *
+                        f64::sin(thetas[i] - thetas[j]) *
+                        f64::powi(theta_dots[j], 2);
+                }
+                sum -= self.gravity * ((n as f64) - (i as f64)) * f64::sin(thetas[i]);
+                v[i] = sum;
+            }
+
+            // Solve M * theta_ddot = v for theta_ddot
+            let lu = LU::new(m);
+            let theta_ddots = lu.solve(&v).unwrap_or_else(|| DVector::from_element(n, 0.0));
+
+            (theta_dots.clone(), theta_ddots)
         }
-
-        // Solve M * theta_ddot = v for theta_ddot (corresponds to lusolve in JS)
-        let lu = LU::new(m);
-        let theta_ddots = lu.solve(&v).unwrap_or_else(|| DVector::from_element(n, 0.0));
-
-        // Return [thetaDots, thetaDDots] matching JS: return [thetaDots, math.lusolve(A, b).map(x => x[0])]
-        (theta_dots.clone(), theta_ddots)
     }
     pub fn reset(&mut self) {
         *self = Universe::new();
@@ -431,12 +486,35 @@ impl Universe {
         }
     }
 
+    pub fn update_bob_color(&mut self, index: usize, color: u32) {
+        if index < self.bobs.len() {
+            self.bobs[index].color = color;
+        }
+    }
+
+    pub fn update_bob_radius(&mut self, index: usize, radius: i32) {
+        if index < self.bobs.len() {
+            self.bobs[index].radius = radius;
+        }
+    }
+
+    pub fn update_bob_omega(&mut self, index: usize, omega: f64) {
+        if index < self.bobs.len() {
+            self.bobs[index].omega = omega;
+        }
+    }
+
     pub fn get_trails(&self) -> JsValue {
-        let trails: Vec<Vec<Trail>> = self.bobs
-            .iter()
-            .map(|bob| bob.trail.clone())
-            .collect();
-        serde_wasm_bindgen::to_value(&trails).unwrap()
+        if self.show_trails {
+            let trails: Vec<Vec<Trail>> = self.bobs
+                .iter()
+                .map(|bob| bob.trail.clone())
+                .collect();
+            serde_wasm_bindgen::to_value(&trails).unwrap()
+        } else {
+            let trails: Vec<Vec<Trail>> = vec![];
+            serde_wasm_bindgen::to_value(&trails).unwrap()
+        }
     }
     pub fn set_gravity(&mut self, gravity: f64) {
         self.gravity = gravity;
@@ -464,5 +542,29 @@ impl Universe {
     }
     pub fn get_implementation(&self) -> Implementation {
         return self.implementation;
+    }
+
+    pub fn set_mass_calculation(&mut self, mass_calculation: bool) {
+        self.mass_calculation = mass_calculation;
+    }
+
+    pub fn get_mass_calculation(&self) -> bool {
+        return self.mass_calculation;
+    }
+
+    pub fn toggle_mass_calculation(&mut self) {
+        self.mass_calculation = !self.mass_calculation;
+    }
+
+    pub fn set_show_trails(&mut self, show_trails: bool) {
+        self.show_trails = show_trails;
+    }
+
+    pub fn get_show_trails(&self) -> bool {
+        return self.show_trails;
+    }
+
+    pub fn toggle_show_trails(&mut self) {
+        self.show_trails = !self.show_trails;
     }
 }
